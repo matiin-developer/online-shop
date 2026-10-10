@@ -533,10 +533,9 @@
                 "menu": "",
                 "layout": "horizontal",
                 "align_items": "center",
-                "pointer": "underline",
-                "animation_line": "grow",
+                "pointer": "none",
                 "submenu_icon": {
-                  "value": "fas fa-angle-down",
+                  "value": "fas fa-chevron-down",
                   "library": "fa-solid"
                 },
                 "dropdown": "tablet",
@@ -546,52 +545,45 @@
                 "menu_typography_typography": "custom",
                 "menu_typography_font_size": {
                   "unit": "px",
-                  "size": 15,
+                  "size": 14.5,
                   "sizes": []
                 },
-                "menu_typography_font_weight": "600",
+                "menu_typography_font_weight": "500",
                 "color_menu_item": "#3E4753",
                 "color_menu_item_hover": "#B11A3B",
-                "pointer_color_menu_item_hover": "#B11A3B",
                 "color_menu_item_active": "#B11A3B",
-                "pointer_color_menu_item_active": "#B11A3B",
-                "pointer_width": {
-                  "unit": "px",
-                  "size": 3,
-                  "sizes": []
-                },
                 "padding_horizontal_menu_item": {
                   "unit": "px",
-                  "size": 14,
+                  "size": 15,
                   "sizes": []
                 },
                 "padding_vertical_menu_item": {
                   "unit": "px",
-                  "size": 10,
+                  "size": 12,
                   "sizes": []
                 },
                 "menu_space_between": {
                   "unit": "px",
-                  "size": 4,
+                  "size": 2,
                   "sizes": []
                 },
                 "color_dropdown_item": "#3E4753",
                 "background_color_dropdown_item": "#FFFFFF",
-                "color_dropdown_item_hover": "#FFFFFF",
-                "background_color_dropdown_item_hover": "#B11A3B",
-                "color_dropdown_item_active": "#FFFFFF",
-                "background_color_dropdown_item_active": "#B11A3B",
+                "color_dropdown_item_hover": "#B11A3B",
+                "background_color_dropdown_item_hover": "#F9EEF1",
+                "color_dropdown_item_active": "#B11A3B",
+                "background_color_dropdown_item_active": "#F9EEF1",
                 "dropdown_typography_typography": "custom",
                 "dropdown_typography_font_size": {
                   "unit": "px",
-                  "size": 14,
+                  "size": 13.5,
                   "sizes": []
                 },
                 "dropdown_typography_font_weight": "500",
                 "dropdown_border_radius": {
                   "unit": "px",
-                  "top": "0",
-                  "right": "0",
+                  "top": "12",
+                  "right": "12",
                   "bottom": "12",
                   "left": "12",
                   "isLinked": false
@@ -599,35 +591,33 @@
                 "dropdown_box_shadow_box_shadow_type": "yes",
                 "dropdown_box_shadow_box_shadow": {
                   "horizontal": 0,
-                  "vertical": 18,
+                  "vertical": 16,
                   "blur": 40,
                   "spread": 0,
-                  "color": "rgba(43,50,60,0.18)"
+                  "color": "rgba(43,50,60,0.10)"
                 },
                 "padding_horizontal_dropdown_item": {
                   "unit": "px",
-                  "size": 20,
+                  "size": 16,
                   "sizes": []
                 },
                 "padding_vertical_dropdown_item": {
                   "unit": "px",
-                  "size": 12,
+                  "size": 10,
                   "sizes": []
                 },
-                "dropdown_divider_border": "solid",
-                "dropdown_divider_width": {
+                "dropdown_top_distance": {
                   "unit": "px",
-                  "size": 1,
+                  "size": 14,
                   "sizes": []
                 },
-                "dropdown_divider_color": "#F0F1F4",
-                "toggle_color": "#FFFFFF",
-                "toggle_background_color": "#B11A3B",
-                "toggle_color_hover": "#FFFFFF",
-                "toggle_background_color_hover": "#3E4753",
+                "toggle_color": "#3E4753",
+                "toggle_background_color": "#FFFFFF",
+                "toggle_color_hover": "#B11A3B",
+                "toggle_background_color_hover": "#FFFFFF",
                 "toggle_size": {
                   "unit": "px",
-                  "size": 22,
+                  "size": 20,
                   "sizes": []
                 },
                 "toggle_border_radius": {
@@ -902,7 +892,7 @@
           "widgetType": "html",
           "settings": {
             "_title": "استایل و انیمیشن‌ها (CSS)",
-            "html": "<style>\n/* ===== Pardis Import Header – dynamic effects (editable) ===== */\n.pi-header{--pi-red:#B11A3B;--pi-red2:#7E1029;--pi-slate:#3E4753;transition:all .35s ease;}\n.pi-header .pi-topbar{max-height:60px;overflow:hidden;transition:max-height .4s ease,padding .4s ease,opacity .3s ease;}\n.pi-header.elementor-sticky--effects .pi-topbar{max-height:0;padding-top:0!important;padding-bottom:0!important;opacity:0;}\n.pi-header .pi-main{position:relative;transition:all .35s ease;}\n.pi-header.elementor-sticky--effects .pi-main{background:rgba(255,255,255,.88)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 12px 35px rgba(43,50,60,.14);padding-top:6px!important;padding-bottom:6px!important;}\n.pi-header .pi-main::after{content:\"\";position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,var(--pi-red),var(--pi-slate),var(--pi-red));background-size:200% 100%;animation:piLine 6s linear infinite;}\n@keyframes piLine{to{background-position:200% 0}}\n.pi-header .pi-logo img{transition:max-width .35s ease,transform .35s ease;}\n.pi-header .pi-logo:hover img{transform:rotate(-3deg) scale(1.04);}\n.pi-header.elementor-sticky--effects .pi-logo img{max-width:118px!important;}\n.pi-header .pi-nav .elementor-nav-menu--main .elementor-item{transition:color .25s ease;}\n.pi-header .pi-nav .elementor-nav-menu--dropdown{border-top:3px solid var(--pi-red);}\n.pi-header .pi-cta .elementor-button{position:relative;overflow:hidden;animation:piPulse 2.6s infinite;}\n.pi-header .pi-cta .elementor-button::before{content:\"\";position:absolute;top:0;right:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-25deg);animation:piShine 3.2s ease-in-out infinite;}\n@keyframes piPulse{0%{box-shadow:0 0 0 0 rgba(177,26,59,.45)}70%{box-shadow:0 0 0 14px rgba(177,26,59,0)}100%{box-shadow:0 0 0 0 rgba(177,26,59,0)}}\n@keyframes piShine{0%,60%{right:-75%}100%{right:130%}}\n.pi-header .pi-call .elementor-icon-box-icon .elementor-icon{animation:piRing 2.8s ease-in-out infinite;}\n@keyframes piRing{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(-14deg)}88%{transform:rotate(12deg)}92%{transform:rotate(-8deg)}96%{transform:rotate(5deg)}}\n.pi-header .pi-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2ecc71;margin-left:6px;box-shadow:0 0 0 0 rgba(46,204,113,.6);animation:piLive 1.8s infinite;vertical-align:middle;}\n@keyframes piLive{70%{box-shadow:0 0 0 8px rgba(46,204,113,0)}100%{box-shadow:0 0 0 0 rgba(46,204,113,0)}}\n@media (prefers-reduced-motion:reduce){.pi-header *{animation:none!important;transition:none!important;}}\n</style>",
+            "html": "<style>\n/* ===== Pardis Import Header – dynamic effects (editable) ===== */\n.pi-header{--pi-red:#B11A3B;--pi-red2:#7E1029;--pi-slate:#3E4753;transition:all .35s ease;}\n.pi-header .pi-topbar{max-height:60px;overflow:hidden;transition:max-height .4s ease,padding .4s ease,opacity .3s ease;}\n.pi-header.elementor-sticky--effects .pi-topbar{max-height:0;padding-top:0!important;padding-bottom:0!important;opacity:0;}\n.pi-header .pi-main{position:relative;transition:all .35s ease;}\n.pi-header.elementor-sticky--effects .pi-main{background:rgba(255,255,255,.88)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 12px 35px rgba(43,50,60,.14);padding-top:6px!important;padding-bottom:6px!important;}\n.pi-header .pi-main::after{content:\"\";position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,var(--pi-red),var(--pi-slate),var(--pi-red));background-size:200% 100%;animation:piLine 6s linear infinite;}\n@keyframes piLine{to{background-position:200% 0}}\n.pi-header .pi-logo img{transition:max-width .35s ease,transform .35s ease;}\n.pi-header .pi-logo:hover img{transform:rotate(-3deg) scale(1.04);}\n.pi-header.elementor-sticky--effects .pi-logo img{max-width:118px!important;}\n/* --- Minimal corporate menu --- */\n.pi-header .pi-nav .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-item{position:relative;letter-spacing:0;transition:color .25s ease;}\n.pi-header .pi-nav .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-item::after{content:\"\";position:absolute;bottom:2px;left:50%;width:18px;height:2px;margin-left:-9px;border-radius:2px;background:var(--pi-red);transform:scaleX(0);transform-origin:center;transition:transform .3s cubic-bezier(.4,0,.2,1);}\n.pi-header .pi-nav .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-item:hover::after,\n.pi-header .pi-nav .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-item.highlighted::after,\n.pi-header .pi-nav .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-item.elementor-item-active::after{transform:scaleX(1);}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-arrow{opacity:.55;font-size:.7em;transition:transform .25s ease,opacity .25s ease;}\n.pi-header .pi-nav .elementor-nav-menu--main li:hover > .elementor-item .sub-arrow{transform:rotate(180deg);opacity:1;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu{padding:8px!important;border:1px solid #ECEEF1;min-width:220px!important;animation:piDrop .22s ease-out;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item{border-radius:8px;transition:background-color .2s ease,color .2s ease,padding .2s ease;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item:hover{padding-right:22px!important;}\n@keyframes piDrop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}\n.pi-header .pi-nav .elementor-menu-toggle{border:1px solid #E3E6EA;transition:all .25s ease;}\n.pi-header .pi-nav .elementor-menu-toggle:hover,.pi-header .pi-nav .elementor-menu-toggle.elementor-active{border-color:var(--pi-red);}\n.pi-header .pi-nav .elementor-nav-menu--dropdown.elementor-nav-menu__container{border-top:1px solid #ECEEF1;margin-top:10px!important;box-shadow:0 20px 40px rgba(43,50,60,.10);}\n.pi-header .pi-cta .elementor-button{position:relative;overflow:hidden;animation:piPulse 2.6s infinite;}\n.pi-header .pi-cta .elementor-button::before{content:\"\";position:absolute;top:0;right:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-25deg);animation:piShine 3.2s ease-in-out infinite;}\n@keyframes piPulse{0%{box-shadow:0 0 0 0 rgba(177,26,59,.45)}70%{box-shadow:0 0 0 14px rgba(177,26,59,0)}100%{box-shadow:0 0 0 0 rgba(177,26,59,0)}}\n@keyframes piShine{0%,60%{right:-75%}100%{right:130%}}\n.pi-header .pi-call .elementor-icon-box-icon .elementor-icon{animation:piRing 2.8s ease-in-out infinite;}\n@keyframes piRing{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(-14deg)}88%{transform:rotate(12deg)}92%{transform:rotate(-8deg)}96%{transform:rotate(5deg)}}\n.pi-header .pi-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2ecc71;margin-left:6px;box-shadow:0 0 0 0 rgba(46,204,113,.6);animation:piLive 1.8s infinite;vertical-align:middle;}\n@keyframes piLive{70%{box-shadow:0 0 0 8px rgba(46,204,113,0)}100%{box-shadow:0 0 0 0 rgba(46,204,113,0)}}\n@media (prefers-reduced-motion:reduce){.pi-header *{animation:none!important;transition:none!important;}}\n</style>",
             "_position": "absolute",
             "_element_width": "initial",
             "_element_custom_width": {
