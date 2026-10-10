@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "ccd0ff4",
+      "id": "18b65ba",
       "elType": "container",
       "settings": {
         "_title": "هدر بازرگانی پردیس",
@@ -49,8 +49,8 @@
             "flex_justify_content": "space-between",
             "flex_align_items": "center",
             "background_background": "gradient",
-            "background_color": "#2B323C",
-            "background_color_b": "#3E4753",
+            "background_color": "#C1272D",
+            "background_color_b": "#0B1B3F",
             "background_gradient_angle": {
               "unit": "deg",
               "size": 90,
@@ -64,7 +64,22 @@
               "left": "20",
               "isLinked": false
             },
-            "hide_mobile": "hidden-mobile"
+            "padding_tablet": {
+              "unit": "px",
+              "top": "8",
+              "right": "20",
+              "bottom": "8",
+              "left": "20",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "6",
+              "right": "14",
+              "bottom": "6",
+              "left": "14",
+              "isLinked": false
+            }
           },
           "elements": [
             {
@@ -72,7 +87,7 @@
               "elType": "container",
               "settings": {
                 "_title": "نوار بالا – راست",
-                "css_classes": "",
+                "css_classes": "pi-tb-right",
                 "content_width": "full",
                 "flex_direction": "row",
                 "flex_align_items": "center",
@@ -94,6 +109,11 @@
                   "unit": "%",
                   "size": 60,
                   "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 60,
+                  "sizes": []
                 }
               },
               "elements": [
@@ -107,13 +127,13 @@
                     "icon_list": [
                       {
                         "_id": "3e2485d",
-                        "text": "۰۲۱-۰۰۰۰۰۰۰۰",
+                        "text": "۰۹۱۳-۳۳۹-۹۶۹۲",
                         "selected_icon": {
                           "value": "fas fa-phone-alt",
                           "library": "fa-solid"
                         },
                         "link": {
-                          "url": "tel:+982100000000",
+                          "url": "tel:+989133399692",
                           "is_external": "",
                           "nofollow": "",
                           "custom_attributes": ""
@@ -188,7 +208,7 @@
               "elType": "container",
               "settings": {
                 "_title": "نوار بالا – چپ",
-                "css_classes": "",
+                "css_classes": "pi-tb-left",
                 "content_width": "full",
                 "flex_direction": "row",
                 "flex_align_items": "center",
@@ -207,6 +227,11 @@
                   "row": "18"
                 },
                 "width": {
+                  "unit": "%",
+                  "size": 40,
+                  "sizes": []
+                },
+                "width_mobile": {
                   "unit": "%",
                   "size": 40,
                   "sizes": []
@@ -275,7 +300,7 @@
                           "library": "fa-brands"
                         },
                         "link": {
-                          "url": "https://wa.me/989000000000",
+                          "url": "https://wa.me/989133399692",
                           "is_external": "on",
                           "nofollow": "",
                           "custom_attributes": ""
@@ -366,17 +391,25 @@
             "background_color": "#FFFFFF",
             "padding": {
               "unit": "px",
-              "top": "14",
+              "top": "12",
               "right": "20",
-              "bottom": "14",
+              "bottom": "12",
+              "left": "20",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "10",
+              "right": "20",
+              "bottom": "10",
               "left": "20",
               "isLinked": false
             },
             "padding_mobile": {
               "unit": "px",
-              "top": "10",
+              "top": "8",
               "right": "14",
-              "bottom": "10",
+              "bottom": "8",
               "left": "14",
               "isLinked": false
             },
@@ -423,67 +456,21 @@
                     "_title": "لوگو",
                     "width": {
                       "unit": "px",
-                      "size": 150,
+                      "size": 84,
                       "sizes": []
                     },
                     "width_tablet": {
                       "unit": "px",
-                      "size": 130,
+                      "size": 70,
                       "sizes": []
                     },
                     "width_mobile": {
                       "unit": "px",
-                      "size": 115,
+                      "size": 56,
                       "sizes": []
                     },
                     "align": "right",
                     "_css_classes": "pi-logo"
-                  },
-                  "elements": [],
-                  "isInner": false
-                },
-                {
-                  "id": "34b0a90",
-                  "elType": "widget",
-                  "widgetType": "heading",
-                  "settings": {
-                    "_title": "شعار برند",
-                    "title": "بازرگانی پردیس<br><span style=\"font-weight:400;font-size:.82em;color:#7A8491\">سریع، با کمترین هزینه و بدون واسطه</span>",
-                    "header_size": "div",
-                    "title_color": "#3E4753",
-                    "typography_typography": "custom",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 14,
-                      "sizes": []
-                    },
-                    "typography_font_weight": "800",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1.5,
-                      "sizes": []
-                    },
-                    "_css_classes": "pi-tagline",
-                    "_border_border": "solid",
-                    "_border_width": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "2",
-                      "bottom": "0",
-                      "left": "0",
-                      "isLinked": false
-                    },
-                    "_border_color": "#E6E8EC",
-                    "_padding": {
-                      "unit": "px",
-                      "top": "2",
-                      "right": "14",
-                      "bottom": "2",
-                      "left": "0",
-                      "isLinked": false
-                    },
-                    "hide_tablet": "hidden-tablet",
-                    "hide_mobile": "hidden-mobile"
                   },
                   "elements": [],
                   "isInner": false
@@ -605,7 +592,13 @@
                   "column": "12",
                   "row": "12"
                 },
-                "flex_justify_content": "flex-end"
+                "flex_justify_content": "flex-end",
+                "flex_gap_mobile": {
+                  "unit": "px",
+                  "size": 8,
+                  "column": "8",
+                  "row": "8"
+                }
               },
               "elements": [
                 {
@@ -614,8 +607,7 @@
                   "widgetType": "html",
                   "settings": {
                     "_title": "جستجوی زنده (دسکتاپ)",
-                    "html": "<div class=\"pi-search\">\n  <button class=\"pi-search-toggle\" type=\"button\" aria-label=\"جستجو در سایت\" aria-expanded=\"false\">\n    <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n  </button>\n  <div class=\"pi-search-pop\">\n    <form class=\"pi-search-form\" role=\"search\" method=\"get\" action=\"/\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n      <input type=\"search\" name=\"s\" placeholder=\"جستجو در خدمات، مقالات، پروژه‌ها…\" autocomplete=\"off\" aria-label=\"عبارت جستجو\">\n      <span class=\"pi-search-spin\" aria-hidden=\"true\"></span>\n    </form>\n    <div class=\"pi-search-results\" role=\"listbox\" aria-live=\"polite\"></div>\n  </div>\n</div>\n",
-                    "hide_mobile": "hidden-mobile",
+                    "html": "<div class=\"pi-search\">\n  <button class=\"pi-search-toggle\" type=\"button\" aria-label=\"جستجو در سایت\" aria-expanded=\"false\">\n    <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n  </button>\n  <div class=\"pi-search-pop\">\n    <form class=\"pi-search-form\" role=\"search\" method=\"get\" action=\"/\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n      <input type=\"hidden\" name=\"post_type\" value=\"page\">\n      <input type=\"search\" name=\"s\" placeholder=\"جستجو در صفحات سایت…\" autocomplete=\"off\" aria-label=\"عبارت جستجو\">\n      <span class=\"pi-search-spin\" aria-hidden=\"true\"></span>\n    </form>\n    <div class=\"pi-search-results\" role=\"listbox\" aria-live=\"polite\"></div>\n  </div>\n</div>\n",
                     "_css_classes": "pi-search-w"
                   },
                   "elements": [],
@@ -680,45 +672,21 @@
                       "left": "24",
                       "isLinked": false
                     },
+                    "text_padding_tablet": {
+                      "unit": "px",
+                      "top": "11",
+                      "right": "18",
+                      "bottom": "11",
+                      "left": "18",
+                      "isLinked": false
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 13,
+                      "sizes": []
+                    },
                     "hover_animation": "float",
                     "hide_mobile": "hidden-mobile"
-                  },
-                  "elements": [],
-                  "isInner": false
-                },
-                {
-                  "id": "cb204b9",
-                  "elType": "widget",
-                  "widgetType": "icon",
-                  "settings": {
-                    "_title": "تماس (موبایل)",
-                    "_css_classes": "pi-mcall",
-                    "selected_icon": {
-                      "value": "fas fa-phone-alt",
-                      "library": "fa-solid"
-                    },
-                    "view": "stacked",
-                    "shape": "square",
-                    "link": {
-                      "url": "tel:+982100000000",
-                      "is_external": "",
-                      "nofollow": "",
-                      "custom_attributes": ""
-                    },
-                    "primary_color": "#F9EEF1",
-                    "secondary_color": "#B11A3B",
-                    "size": {
-                      "unit": "px",
-                      "size": 16,
-                      "sizes": []
-                    },
-                    "icon_padding": {
-                      "unit": "px",
-                      "size": 12,
-                      "sizes": []
-                    },
-                    "hide_desktop": "hidden-desktop",
-                    "hide_tablet": "hidden-tablet"
                   },
                   "elements": [],
                   "isInner": false
@@ -753,7 +721,7 @@
                     },
                     "icon_padding": {
                       "unit": "px",
-                      "size": 12,
+                      "size": 11,
                       "sizes": []
                     },
                     "hide_desktop": "hidden-desktop"
@@ -1599,13 +1567,13 @@
                     "icon_list": [
                       {
                         "_id": "9a70ee9",
-                        "text": "۰۲۱-۰۰۰۰۰۰۰۰",
+                        "text": "۰۹۱۳-۳۳۹-۹۶۹۲",
                         "selected_icon": {
                           "value": "fas fa-phone-alt",
                           "library": "fa-solid"
                         },
                         "link": {
-                          "url": "tel:+982100000000",
+                          "url": "tel:+989133399692",
                           "is_external": "",
                           "nofollow": "",
                           "custom_attributes": ""
@@ -1650,7 +1618,7 @@
           "isInner": true
         },
         {
-          "id": "5f719f7",
+          "id": "5d23f49",
           "elType": "container",
           "settings": {
             "_title": "منوی کشویی موبایل (Off-canvas)",
@@ -1719,17 +1687,17 @@
                     "_title": "لوگو",
                     "width": {
                       "unit": "px",
-                      "size": 120,
+                      "size": 60,
                       "sizes": []
                     },
                     "width_tablet": {
                       "unit": "px",
-                      "size": 120,
+                      "size": 60,
                       "sizes": []
                     },
                     "width_mobile": {
                       "unit": "px",
-                      "size": 110,
+                      "size": 52,
                       "sizes": []
                     },
                     "align": "right",
@@ -1779,7 +1747,7 @@
               "isInner": true
             },
             {
-              "id": "a8104ff",
+              "id": "5f719f7",
               "elType": "container",
               "settings": {
                 "_title": "جستجو (موبایل)",
@@ -1796,12 +1764,12 @@
               },
               "elements": [
                 {
-                  "id": "a553597",
+                  "id": "a8104ff",
                   "elType": "widget",
                   "widgetType": "html",
                   "settings": {
                     "_title": "جستجوی زنده (موبایل)",
-                    "html": "<div class=\"pi-search pi-search--inline\">\n  <button class=\"pi-search-toggle\" type=\"button\" aria-label=\"جستجو در سایت\" aria-expanded=\"false\">\n    <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n  </button>\n  <div class=\"pi-search-pop\">\n    <form class=\"pi-search-form\" role=\"search\" method=\"get\" action=\"/\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n      <input type=\"search\" name=\"s\" placeholder=\"جستجو در خدمات، مقالات، پروژه‌ها…\" autocomplete=\"off\" aria-label=\"عبارت جستجو\">\n      <span class=\"pi-search-spin\" aria-hidden=\"true\"></span>\n    </form>\n    <div class=\"pi-search-results\" role=\"listbox\" aria-live=\"polite\"></div>\n  </div>\n</div>\n"
+                    "html": "<div class=\"pi-search pi-search--inline\">\n  <button class=\"pi-search-toggle\" type=\"button\" aria-label=\"جستجو در سایت\" aria-expanded=\"false\">\n    <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n  </button>\n  <div class=\"pi-search-pop\">\n    <form class=\"pi-search-form\" role=\"search\" method=\"get\" action=\"/\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M20 20l-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>\n      <input type=\"hidden\" name=\"post_type\" value=\"page\">\n      <input type=\"search\" name=\"s\" placeholder=\"جستجو در صفحات سایت…\" autocomplete=\"off\" aria-label=\"عبارت جستجو\">\n      <span class=\"pi-search-spin\" aria-hidden=\"true\"></span>\n    </form>\n    <div class=\"pi-search-results\" role=\"listbox\" aria-live=\"polite\"></div>\n  </div>\n</div>\n"
                   },
                   "elements": [],
                   "isInner": false
@@ -1913,7 +1881,7 @@
               "isInner": true
             },
             {
-              "id": "1752211",
+              "id": "a553597",
               "elType": "container",
               "settings": {
                 "_title": "پایین پنل",
@@ -1950,6 +1918,71 @@
               "elements": [
                 {
                   "id": "d8a44da",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "_title": "دکمه ثبت درخواست (موبایل)",
+                    "text": "ثبت درخواست واردات",
+                    "link": {
+                      "url": "https://pardisimport.com/contact/",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-arrow-left",
+                      "library": "fa-solid"
+                    },
+                    "icon_align": "left",
+                    "icon_indent": {
+                      "unit": "px",
+                      "size": 8,
+                      "sizes": []
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14.5,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "align": "justify",
+                    "button_text_color": "#FFFFFF",
+                    "hover_color": "#FFFFFF",
+                    "background_background": "classic",
+                    "background_color": "#3E4753",
+                    "button_background_hover_background": "classic",
+                    "button_background_hover_color": "#B11A3B",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "10",
+                      "bottom": "14",
+                      "left": "10",
+                      "isLinked": false
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "10",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "f99067a",
                   "elType": "container",
                   "settings": {
                     "_title": "دکمه‌های تماس",
@@ -1981,7 +2014,7 @@
                         "_title": "دکمه تماس",
                         "text": "تماس",
                         "link": {
-                          "url": "tel:+982100000000",
+                          "url": "tel:+989133399692",
                           "is_external": "",
                           "nofollow": "",
                           "custom_attributes": ""
@@ -2044,7 +2077,7 @@
                         "_title": "دکمه واتساپ",
                         "text": "واتساپ",
                         "link": {
-                          "url": "https://wa.me/989000000000",
+                          "url": "https://wa.me/989133399692",
                           "is_external": "on",
                           "nofollow": "",
                           "custom_attributes": ""
@@ -2107,7 +2140,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "f99067a",
+                  "id": "c309056",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
@@ -2135,14 +2168,14 @@
                   "isInner": false
                 },
                 {
-                  "id": "9fc66d3",
+                  "id": "1752211",
                   "elType": "widget",
                   "widgetType": "social-icons",
                   "settings": {
                     "_title": "شبکه‌های اجتماعی",
                     "social_icon_list": [
                       {
-                        "_id": "c309056",
+                        "_id": "ec0c3c6",
                         "social_icon": {
                           "value": "fab fa-instagram",
                           "library": "fa-brands"
@@ -2155,20 +2188,20 @@
                         }
                       },
                       {
-                        "_id": "ec0c3c6",
+                        "_id": "1005460",
                         "social_icon": {
                           "value": "fab fa-whatsapp",
                           "library": "fa-brands"
                         },
                         "link": {
-                          "url": "https://wa.me/989000000000",
+                          "url": "https://wa.me/989133399692",
                           "is_external": "on",
                           "nofollow": "",
                           "custom_attributes": ""
                         }
                       },
                       {
-                        "_id": "1005460",
+                        "_id": "ac107ad",
                         "social_icon": {
                           "value": "fab fa-telegram-plane",
                           "library": "fa-brands"
@@ -2181,7 +2214,7 @@
                         }
                       },
                       {
-                        "_id": "ac107ad",
+                        "_id": "9fc66d3",
                         "social_icon": {
                           "value": "fab fa-linkedin-in",
                           "library": "fa-brands"
@@ -2228,12 +2261,12 @@
           "isInner": true
         },
         {
-          "id": "5d23f49",
+          "id": "ccd0ff4",
           "elType": "widget",
           "widgetType": "html",
           "settings": {
             "_title": "استایل و اسکریپت هدر (CSS/JS)",
-            "html": "<style>\n/* ===== هدر بازرگانی پردیس – رنگ‌ها را از این‌جا تغییر دهید ===== */\n:root{--pi-red:#B11A3B;--pi-red2:#7E1029;--pi-slate:#3E4753;--pi-muted:#7A8491;--pi-tint:#F9EEF1;--pi-line:#ECEEF1;}\n.pi-header{transition:all .35s ease;}\n.pi-header .pi-code{position:absolute!important;width:0!important;height:0!important;overflow:hidden;}\n\n/* --- Top bar: جمع می‌شود هنگام اسکرول --- */\n.pi-header .pi-topbar{max-height:60px;overflow:hidden;transition:max-height .4s ease,padding .4s ease,opacity .3s ease;}\n.pi-header.elementor-sticky--effects .pi-topbar{max-height:0;padding-top:0!important;padding-bottom:0!important;opacity:0;}\n\n/* --- Main bar --- */\n.pi-header .pi-main{position:relative;transition:all .35s ease;}\n.pi-header.elementor-sticky--effects .pi-main{background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 12px 35px rgba(43,50,60,.12);padding-top:6px!important;padding-bottom:6px!important;}\n.pi-header .pi-main::after{content:\"\";position:absolute;inset:auto 0 0 0;height:2px;background:linear-gradient(90deg,transparent,var(--pi-red),var(--pi-slate),var(--pi-red),transparent);background-size:200% 100%;animation:piLine 7s linear infinite;opacity:.8;}\n@keyframes piLine{to{background-position:200% 0}}\n.pi-header .pi-logo img{transition:max-width .35s ease;}\n.pi-header.elementor-sticky--effects .pi-logo img{max-width:118px!important;}\n\n/* --- منو دقیقاً در وسط هدر --- */\n@media (min-width:1025px){\n  .pi-header .pi-main>.e-con-inner>.pi-brand,.pi-header .pi-main>.e-con-inner>.pi-actions,\n  .pi-header .pi-main>.pi-brand,.pi-header .pi-main>.pi-actions{flex:1 1 0!important;min-width:0;}\n  .pi-header .pi-nav{flex:0 0 auto!important;}\n}\n@media (max-width:1280px){.pi-header .pi-tagline{display:none;}}\n\n/* --- منوی اصلی مینیمال --- */\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item{position:relative;transition:color .25s ease;}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item::after{content:\"\";position:absolute;bottom:3px;left:50%;width:18px;height:2px;margin-left:-9px;border-radius:2px;background:var(--pi-red);transform:scaleX(0);transition:transform .3s cubic-bezier(.4,0,.2,1);}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item:hover::after,\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.highlighted::after,\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li.is-mega-open>.elementor-item::after,\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.elementor-item-active::after{transform:scaleX(1);}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.elementor-item-active{font-weight:700;}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li.is-mega-open>.elementor-item{color:var(--pi-red)!important;}\n.pi-header .pi-nav .sub-arrow,.pi-header .pi-mega-arrow{opacity:.55;font-size:.7em;display:inline-flex;margin-right:5px;transition:transform .25s ease,opacity .25s ease;}\n.pi-header .pi-nav li:hover>.elementor-item .sub-arrow,.pi-header .pi-nav li.is-mega-open .pi-mega-arrow{transform:rotate(180deg);opacity:1;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu{padding:8px!important;border:1px solid var(--pi-line);min-width:220px!important;animation:piDrop .22s ease-out;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item{border-radius:8px;transition:background-color .2s,color .2s,padding .2s;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item:hover{padding-right:22px!important;}\n.pi-header .pi-nav li.pi-mega-trigger>.sub-menu{display:none!important;}\n@keyframes piDrop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}\n\n/* --- برچسب کنار آیتم منو --- */\n.pi-badge{display:inline-block;margin-right:6px;padding:2px 7px;border-radius:20px;background:var(--pi-tint);color:var(--pi-red);font-size:10px;font-weight:700;line-height:1.5;vertical-align:middle;}\n\n/* --- مگامنو --- */\n.pi-header .pi-mega{position:absolute!important;top:100%;left:50%;width:min(1200px,calc(100% - 40px))!important;margin-top:-6px;\n  box-shadow:0 30px 60px rgba(43,50,60,.14);border:1px solid var(--pi-line);z-index:20;\n  opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,12px);transition:opacity .25s ease,transform .25s ease,visibility .25s;}\n.pi-header .pi-mega.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);}\n.pi-header .pi-mega-grid{display:grid!important;grid-template-columns:1fr 1fr;gap:4px 14px;}\n.pi-header .pi-mega-grid>.elementor-widget{width:auto!important;margin:0!important;}\n.pi-header .pi-mega-item{position:relative;border-radius:12px;padding:12px;transition:background-color .2s ease;}\n.pi-header .pi-mega-item:hover{background:#F7F8FA;}\n.pi-header .pi-mega-item .elementor-icon{border-radius:12px!important;transition:all .25s ease;}\n.pi-header .pi-mega-item .elementor-icon-box-title a::after{content:\"\";position:absolute;inset:0;}\n.pi-header .pi-mega-item:hover .elementor-icon-box-title,.pi-header .pi-mega-item:hover .elementor-icon-box-title a{color:var(--pi-red)!important;}\n.pi-header .pi-mega-all .elementor-button-icon{transition:transform .25s ease;}\n.pi-header .pi-mega-all:hover .elementor-button-icon{transform:translateX(-4px);}\n.pi-header .pi-mega-card{position:relative;overflow:hidden;}\n.pi-header .pi-mega-card::before,.pi-header .pi-mega-card::after{content:\"\";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14);pointer-events:none;}\n.pi-header .pi-mega-card::before{width:260px;height:260px;left:-110px;bottom:-130px;}\n.pi-header .pi-mega-card::after{width:160px;height:160px;left:-50px;bottom:-70px;background:rgba(255,255,255,.05);}\n.pi-header .pi-mega-card>*{position:relative;z-index:1;}\n@media (max-width:1024px){.pi-header .pi-mega{display:none!important;}}\n\n/* --- جستجوی زنده مینیمال --- */\n.pi-search{position:relative;}\n.pi-search-toggle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:1px solid var(--pi-line);border-radius:50%;background:#fff;color:var(--pi-slate);cursor:pointer;transition:all .25s ease;}\n.pi-search-toggle:hover,.pi-search.is-open .pi-search-toggle{color:var(--pi-red);border-color:var(--pi-red);background:var(--pi-tint);}\n.pi-search-pop{position:absolute;top:calc(100% + 14px);left:0;width:340px;max-width:calc(100vw - 32px);background:#fff;border:1px solid var(--pi-line);border-radius:14px;box-shadow:0 24px 50px rgba(43,50,60,.14);z-index:30;\n  opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility .2s;}\n.pi-search.is-open .pi-search-pop{opacity:1;visibility:visible;transform:none;}\n.pi-search-form{display:flex;align-items:center;gap:8px;margin:0;padding:6px 14px;color:var(--pi-muted);}\n.pi-search-form input[type=search]{flex:1;min-width:0;height:40px;padding:0!important;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:var(--pi-slate);font:inherit;font-size:14px;}\n.pi-search-form input::-webkit-search-cancel-button{display:none;}\n.pi-search-spin{width:14px;height:14px;border:2px solid var(--pi-line);border-top-color:var(--pi-red);border-radius:50%;opacity:0;animation:piSpin .7s linear infinite;}\n.pi-search.is-loading .pi-search-spin{opacity:1;}\n@keyframes piSpin{to{transform:rotate(360deg)}}\n.pi-search-results{max-height:min(60vh,380px);overflow-y:auto;}\n.pi-search-results:not(:empty){border-top:1px solid var(--pi-line);padding:6px;}\n.pi-sr-item{display:flex;align-items:center;gap:10px;padding:10px;border-radius:10px;color:var(--pi-slate)!important;text-decoration:none!important;font-size:13.5px;line-height:1.6;transition:background-color .15s;}\n.pi-sr-item:hover,.pi-sr-item.is-active{background:#F7F8FA;}\n.pi-sr-item:hover .pi-sr-title,.pi-sr-item.is-active .pi-sr-title{color:var(--pi-red);}\n.pi-sr-type{flex:0 0 auto;padding:1px 8px;border-radius:20px;background:var(--pi-tint);color:var(--pi-red);font-size:10.5px;font-weight:700;}\n.pi-sr-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}\n.pi-sr-title mark{background:none;color:var(--pi-red);font-weight:700;padding:0;}\n.pi-sr-empty{padding:16px 10px;color:var(--pi-muted);font-size:13px;text-align:center;}\n.pi-sr-all{display:block;margin-top:4px;padding:10px;border-top:1px solid var(--pi-line);color:var(--pi-red)!important;font-size:12.5px;font-weight:700;text-align:center;text-decoration:none!important;}\n.pi-search--inline .pi-search-toggle{display:none;}\n.pi-search--inline .pi-search-pop{position:static;width:auto;max-width:none;opacity:1;visibility:visible;transform:none;box-shadow:none;background:#F7F8FA;border-color:transparent;border-radius:12px;}\n.pi-search--inline .pi-search-results:not(:empty){background:#fff;border-radius:0 0 12px 12px;}\n\n/* --- دکمه‌های هدر --- */\n.pi-header .pi-burger .elementor-icon,.pi-header .pi-mcall .elementor-icon{border-radius:12px!important;}\n.pi-header .pi-cta .elementor-button{position:relative;overflow:hidden;animation:piPulse 2.6s infinite;}\n.pi-header .pi-cta .elementor-button::before{content:\"\";position:absolute;top:0;right:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-25deg);animation:piShine 3.2s ease-in-out infinite;}\n@keyframes piPulse{0%{box-shadow:0 0 0 0 rgba(177,26,59,.4)}70%{box-shadow:0 0 0 12px rgba(177,26,59,0)}100%{box-shadow:0 0 0 0 rgba(177,26,59,0)}}\n@keyframes piShine{0%,60%{right:-75%}100%{right:130%}}\n\n/* --- منوی موبایل کشویی (Off-canvas) --- */\n.pi-header .pi-offcanvas{position:fixed!important;top:0;right:0;bottom:0;width:min(88vw,380px)!important;max-width:none!important;height:100vh;height:100dvh;\n  overflow-y:auto;overscroll-behavior:contain;z-index:1001;box-shadow:-20px 0 60px rgba(43,50,60,.2);\n  transform:translateX(105%);visibility:hidden;transition:transform .4s cubic-bezier(.4,0,.2,1),visibility .4s;}\n.pi-header .pi-offcanvas.is-open{transform:none;visibility:visible;}\n.pi-header .pi-offcanvas>.pi-oc-nav{flex:1 0 auto;}\n.pi-overlay{position:fixed;inset:0;z-index:1000;background:rgba(43,50,60,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s;}\n.pi-overlay.is-open{opacity:1;visibility:visible;}\nhtml.pi-lock,html.pi-lock body{overflow:hidden!important;}\n.pi-offcanvas .pi-mnav .elementor-menu-toggle{display:none!important;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown{display:block!important;transform:none!important;max-height:none!important;overflow:visible!important;box-shadow:none!important;position:static!important;width:auto!important;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a{display:flex;align-items:center;border-radius:10px;justify-content:flex-start;transition:background-color .2s,color .2s;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a.elementor-item-active{font-weight:700;box-shadow:inset -3px 0 0 var(--pi-red);}\n.pi-offcanvas .pi-mnav .sub-menu{margin:2px 14px 6px 0!important;border-right:1px solid var(--pi-line)!important;}\n.pi-offcanvas .pi-mnav .sub-menu a{font-size:14px!important;color:var(--pi-muted)!important;}\n.pi-offcanvas .pi-mnav .sub-arrow{margin-right:auto;transition:transform .25s ease;}\n.pi-offcanvas .pi-mnav a.highlighted .sub-arrow{transform:rotate(180deg);}\n.pi-offcanvas .pi-oc-btns>.elementor-widget{flex:1 1 0;}\n.pi-offcanvas.is-open .pi-oc-nav li{animation:piSlideIn .4s ease both;}\n.pi-offcanvas.is-open .pi-oc-nav li:nth-child(2){animation-delay:.04s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(3){animation-delay:.08s}\n.pi-offcanvas.is-open .pi-oc-nav li:nth-child(4){animation-delay:.12s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(5){animation-delay:.16s}\n.pi-offcanvas.is-open .pi-oc-nav li:nth-child(6){animation-delay:.2s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(n+7){animation-delay:.24s}\n@keyframes piSlideIn{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}\n@media (min-width:1025px){.pi-header .pi-offcanvas{display:none!important;}}\n\n/* --- نمایش در ویرایشگر المنتور: مگامنو و منوی موبایل باز می‌مانند تا قابل ویرایش باشند --- */\n.elementor-editor-active .pi-header .pi-mega{position:relative!important;top:auto;left:auto;opacity:1;visibility:visible;pointer-events:auto;transform:none;margin:20px auto!important;}\n.elementor-editor-active .pi-header .pi-offcanvas{position:relative!important;display:flex!important;transform:none;visibility:visible;height:auto;margin:20px auto;outline:2px dashed #C9CED6;}\n.elementor-editor-active .pi-header .pi-mega::before,.elementor-editor-active .pi-header .pi-offcanvas::before{position:absolute;top:-22px;right:0;font-size:11px;color:#7A8491;}\n.elementor-editor-active .pi-header .pi-mega::before{content:\"مگامنو خدمات – در سایت با هاور روی «خدمات» باز می‌شود\";}\n.elementor-editor-active .pi-header .pi-offcanvas::before{content:\"منوی موبایل – در سایت با دکمه همبرگری باز می‌شود\";}\n.elementor-editor-active .pi-header .pi-code{position:relative!important;width:auto!important;height:auto!important;}\n\n@media (prefers-reduced-motion:reduce){.pi-header *,.pi-header *::before,.pi-header *::after{animation:none!important;transition:none!important;}}\n</style>\n\n<script>\n(function(){\n  /* ===== تنظیمات قابل ویرایش ===== */\n  var MEGA_ITEM = 'خدمات ما';          // متن آیتمی از منو که مگامنو را باز می‌کند\n  var BADGES = { 'مقالات': 'جدید' };   // متن آیتم منو : متن برچسب کنار آن\n  var SEARCH_LIMIT = 8;                 // تعداد نتایج جستجوی زنده\n  var TYPE_LABELS = { post: 'مقاله', page: 'صفحه', project: 'پروژه', projects: 'پروژه', portfolio: 'پروژه', product: 'محصول', service: 'خدمت', services: 'خدمت' };\n\n  function ready(fn){ document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }\n  function norm(t){ return (t || '').replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\\u200c\\s]+/g,' ').trim(); }\n  function key(t){ return norm(t).replace(/ /g,''); }\n  function text(a){ var c = a.cloneNode(true); c.querySelectorAll('.sub-arrow,.pi-badge,.pi-mega-arrow').forEach(function(x){x.remove();}); return c.textContent.trim(); }\n\n  ready(function(){\n    var header = document.querySelector('.pi-header'); if (!header) return;\n    var editor = document.body.classList.contains('elementor-editor-active');\n\n    /* --- برچسب‌ها --- */\n    header.querySelectorAll('.pi-nav .elementor-item, .pi-mnav .elementor-item').forEach(function(a){\n      var b = BADGES[text(a)];\n      if (b && !a.querySelector('.pi-badge')) { var s = document.createElement('span'); s.className = 'pi-badge'; s.textContent = b; a.appendChild(s); }\n    });\n    if (editor) return;\n\n    /* --- مگامنو --- */\n    var mega = header.querySelector('.pi-mega'), li = null;\n    header.querySelectorAll('.pi-nav .elementor-nav-menu--main > ul > li').forEach(function(x){\n      var a = x.querySelector(':scope > a');\n      if (!li && (x.classList.contains('pi-mega-trigger') || (a && key(text(a)).indexOf(key(MEGA_ITEM)) === 0))) li = x;\n    });\n    if (mega && li) {\n      var a = li.querySelector(':scope > a'), t;\n      li.classList.add('pi-mega-trigger');\n      if (!a.querySelector('.sub-arrow')) {\n        var arr = document.createElement('span'); arr.className = 'pi-mega-arrow';\n        arr.innerHTML = '<svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" aria-hidden=\"true\"><path d=\"M2 3.5l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>';\n        a.appendChild(arr);\n      }\n      /* لینک‌های مگامنو خودکار از زیرمنوی وردپرس خوانده می‌شوند */\n      var map = {};\n      li.querySelectorAll('.sub-menu a[href]').forEach(function(s){ map[key(text(s))] = s.getAttribute('href'); });\n      mega.querySelectorAll('.pi-mega-item').forEach(function(it){\n        var tt = it.querySelector('.elementor-icon-box-title'); var h = tt && map[key(tt.textContent)];\n        if (h) it.querySelectorAll('a').forEach(function(x){ x.setAttribute('href', h); });\n      });\n      var own = a.getAttribute('href');\n      if (own && own.charAt(0) !== '#') mega.querySelectorAll('.pi-mega-all a').forEach(function(x){ x.setAttribute('href', own); });\n      a.setAttribute('aria-haspopup', 'true'); a.setAttribute('aria-expanded', 'false');\n      var open  = function(){ clearTimeout(t); mega.classList.add('is-open'); li.classList.add('is-mega-open'); a.setAttribute('aria-expanded','true'); };\n      var shut  = function(){ mega.classList.remove('is-open'); li.classList.remove('is-mega-open'); a.setAttribute('aria-expanded','false'); };\n      var close = function(){ clearTimeout(t); t = setTimeout(shut, 180); };\n      [li, mega].forEach(function(el){ el.addEventListener('mouseenter', open); el.addEventListener('mouseleave', close); });\n      li.addEventListener('focusin', open); mega.addEventListener('focusin', open);\n      mega.addEventListener('focusout', function(e){ if (!mega.contains(e.relatedTarget) && !li.contains(e.relatedTarget)) close(); });\n      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') shut(); });\n    }\n\n\n    /* --- جستجوی زنده (WordPress REST API) --- */\n    var apiLink = document.querySelector('link[rel=\"https://api.w.org/\"]');\n    var API = (apiLink ? apiLink.href : location.origin + '/wp-json/').replace(/\\/?$/, '/');\n    var HOME = API.replace(/wp-json\\/$/, '').replace(/\\?rest_route=\\/$/, '');\n    var cache = {};\n    function esc(t){ var d = document.createElement('div'); d.textContent = t; return d.innerHTML; }\n    function decode(h){ return new DOMParser().parseFromString(h || '', 'text/html').documentElement.textContent; }\n    function mark(t, q){\n      var safe = esc(t), words = q.split(' ').filter(function(w){ return w.length > 1; }).map(function(w){ return esc(w).replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&'); });\n      return words.length ? safe.replace(new RegExp('(' + words.join('|') + ')', 'gi'), '<mark>$1</mark>') : safe;\n    }\n    header.querySelectorAll('.pi-search').forEach(function(root){\n      var input = root.querySelector('input'), box = root.querySelector('.pi-search-results'), form = root.querySelector('form'), tog = root.querySelector('.pi-search-toggle');\n      var inline = root.classList.contains('pi-search--inline'), timer, ctrl, active = -1;\n      form.setAttribute('action', HOME);\n      function allUrl(q){ return HOME + '?s=' + encodeURIComponent(q); }\n      function items(){ return box.querySelectorAll('.pi-sr-item'); }\n      function setActive(i){ var l = items(); if (!l.length) return; active = (i + l.length) % l.length; l.forEach(function(x, j){ x.classList.toggle('is-active', j === active); x.setAttribute('aria-selected', j === active); }); l[active].scrollIntoView({block:'nearest'}); }\n      function render(q, data){\n        active = -1; root.classList.remove('is-loading');\n        if (!data.length) { box.innerHTML = '<div class=\"pi-sr-empty\">نتیجه‌ای برای «' + esc(q) + '» پیدا نشد.</div>'; return; }\n        box.innerHTML = data.map(function(r){\n          return '<a class=\"pi-sr-item\" role=\"option\" href=\"' + esc(r.url) + '\"><span class=\"pi-sr-type\">' + esc(TYPE_LABELS[r.subtype] || r.subtype || '') + '</span><span class=\"pi-sr-title\">' + mark(decode(r.title), q) + '</span></a>';\n        }).join('') + '<a class=\"pi-sr-all\" href=\"' + esc(allUrl(q)) + '\">مشاهده همه نتایج «' + esc(q) + '»</a>';\n      }\n      function run(q){\n        if (cache[q]) return render(q, cache[q]);\n        if (ctrl) ctrl.abort(); ctrl = window.AbortController ? new AbortController() : null;\n        root.classList.add('is-loading');\n        fetch(API + 'wp/v2/search?search=' + encodeURIComponent(q) + '&per_page=' + SEARCH_LIMIT + '&_fields=id,title,url,subtype', ctrl ? {signal: ctrl.signal} : {})\n          .then(function(r){ return r.ok ? r.json() : []; })\n          .then(function(d){ d = Array.isArray(d) ? d : []; cache[q] = d; if (norm(input.value) === q) render(q, d); })\n          .catch(function(e){ if (e.name !== 'AbortError') { root.classList.remove('is-loading'); box.innerHTML = '<a class=\"pi-sr-all\" href=\"' + esc(allUrl(q)) + '\">جستجوی «' + esc(q) + '» در سایت</a>'; } });\n      }\n      input.addEventListener('input', function(){\n        clearTimeout(timer); var q = norm(input.value);\n        root.classList.toggle('has-query', q.length > 0);\n        if (q.length < 2) { if (ctrl) ctrl.abort(); root.classList.remove('is-loading'); box.innerHTML = ''; return; }\n        timer = setTimeout(function(){ run(q); }, 280);\n      });\n      input.addEventListener('keydown', function(e){\n        if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }\n        else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }\n        else if (e.key === 'Enter' && active > -1) { e.preventDefault(); items()[active].click(); }\n        else if (e.key === 'Escape' && !inline) { e.stopPropagation(); closeS(); tog.focus(); }\n      });\n      form.addEventListener('submit', function(e){ var q = norm(input.value); if (!q) { e.preventDefault(); return; } input.value = q; });\n      function openS(){ root.classList.add('is-open'); tog.setAttribute('aria-expanded','true'); setTimeout(function(){ input.focus(); }, 60); }\n      function closeS(){ root.classList.remove('is-open'); tog.setAttribute('aria-expanded','false'); }\n      if (!inline) {\n        tog.addEventListener('click', function(){ root.classList.contains('is-open') ? closeS() : openS(); });\n        document.addEventListener('click', function(e){ if (!root.contains(e.target)) closeS(); });\n        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeS(); });\n      }\n    });\n\n    /* --- منوی موبایل کشویی --- */\n    var oc = header.querySelector('.pi-offcanvas');\n    if (oc) {\n      var ov = document.createElement('div'); ov.className = 'pi-overlay'; header.appendChild(ov);\n      oc.setAttribute('role', 'dialog'); oc.setAttribute('aria-modal', 'true'); oc.setAttribute('aria-label', 'منوی سایت'); oc.id = oc.id || 'pi-menu';\n      var burgers = header.querySelectorAll('.pi-burger a, .pi-burger .elementor-icon');\n      var openOC = function(e){ if (e) e.preventDefault(); oc.classList.add('is-open'); ov.classList.add('is-open'); document.documentElement.classList.add('pi-lock');\n        burgers.forEach(function(b){ b.setAttribute('aria-expanded','true'); }); var c = oc.querySelector('.pi-close a'); if (c) c.focus(); };\n      var closeOC = function(e){ if (e) e.preventDefault(); if (!oc.classList.contains('is-open')) return; oc.classList.remove('is-open'); ov.classList.remove('is-open'); document.documentElement.classList.remove('pi-lock');\n        burgers.forEach(function(b){ b.setAttribute('aria-expanded','false'); }); };\n      burgers.forEach(function(b){ b.setAttribute('aria-controls', oc.id); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-label','باز کردن منو'); b.addEventListener('click', openOC); });\n      oc.querySelectorAll('.pi-close a, .pi-close .elementor-icon').forEach(function(b){ b.setAttribute('aria-label','بستن منو'); b.addEventListener('click', closeOC); });\n      ov.addEventListener('click', closeOC);\n      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeOC(); });\n      oc.querySelectorAll('.pi-mnav a[href]').forEach(function(l){\n        l.addEventListener('click', function(){ var h = l.getAttribute('href'); if (h && h.charAt(0) !== '#' && !l.parentElement.classList.contains('menu-item-has-children')) closeOC(); });\n      });\n      window.addEventListener('resize', function(){ if (window.innerWidth > 1024) closeOC(); });\n    }\n  });\n})();\n</script>\n",
+            "html": "<style>\n/* ===== هدر بازرگانی پردیس – رنگ‌ها را از این‌جا تغییر دهید ===== */\n:root{--pi-red:#B11A3B;--pi-red2:#7E1029;--pi-slate:#3E4753;--pi-muted:#7A8491;--pi-tint:#F9EEF1;--pi-line:#ECEEF1;}\n.pi-header{transition:all .35s ease;}\n.pi-header .pi-code{position:absolute!important;width:0!important;height:0!important;overflow:hidden;}\n\n/* --- Top bar: جمع می‌شود هنگام اسکرول --- */\n.pi-header .pi-topbar{max-height:60px;overflow:hidden;transition:max-height .4s ease,padding .4s ease,opacity .3s ease;}\n.pi-header.elementor-sticky--effects .pi-topbar{max-height:0;padding-top:0!important;padding-bottom:0!important;opacity:0;}\n\n/* --- Main bar --- */\n.pi-header .pi-main{position:relative;transition:all .35s ease;}\n.pi-header.elementor-sticky--effects .pi-main{background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 12px 35px rgba(43,50,60,.12);padding-top:6px!important;padding-bottom:6px!important;}\n.pi-header .pi-main::after{content:\"\";position:absolute;inset:auto 0 0 0;height:2px;background:linear-gradient(90deg,transparent,var(--pi-red),var(--pi-slate),var(--pi-red),transparent);background-size:200% 100%;animation:piLine 7s linear infinite;opacity:.8;}\n@keyframes piLine{to{background-position:200% 0}}\n.pi-header .pi-logo img{transition:max-width .35s ease;}\n.pi-header.elementor-sticky--effects .pi-logo img{max-width:64px!important;}\n\n/* --- منو دقیقاً در وسط هدر --- */\n@media (min-width:1025px){\n  .pi-header .pi-main>.e-con-inner>.pi-brand,.pi-header .pi-main>.e-con-inner>.pi-actions,\n  .pi-header .pi-main>.pi-brand,.pi-header .pi-main>.pi-actions{flex:1 1 0!important;min-width:0;}\n  .pi-header .pi-nav{flex:0 0 auto!important;}\n}\n@media (max-width:1280px){.pi-header .pi-tagline{display:none;}}\n\n/* --- منوی اصلی مینیمال --- */\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item{position:relative;transition:color .25s ease;}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item::after{content:\"\";position:absolute;bottom:3px;left:50%;width:18px;height:2px;margin-left:-9px;border-radius:2px;background:var(--pi-red);transform:scaleX(0);transition:transform .3s cubic-bezier(.4,0,.2,1);}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item:hover::after,\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.highlighted::after,\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li.is-mega-open>.elementor-item::after,\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.elementor-item-active::after{transform:scaleX(1);}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.elementor-item-active{font-weight:700;}\n.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li.is-mega-open>.elementor-item{color:var(--pi-red)!important;}\n.pi-header .pi-nav .sub-arrow,.pi-header .pi-mega-arrow{opacity:.55;font-size:.7em;display:inline-flex;margin-right:5px;transition:transform .25s ease,opacity .25s ease;}\n.pi-header .pi-nav li:hover>.elementor-item .sub-arrow,.pi-header .pi-nav li.is-mega-open .pi-mega-arrow{transform:rotate(180deg);opacity:1;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu{padding:8px!important;border:1px solid var(--pi-line);min-width:220px!important;animation:piDrop .22s ease-out;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item{border-radius:8px;transition:background-color .2s,color .2s,padding .2s;}\n.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item:hover{padding-right:22px!important;}\n.pi-header .pi-nav li.pi-mega-trigger>.sub-menu{display:none!important;}\n@keyframes piDrop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}\n\n/* --- برچسب کنار آیتم منو --- */\n.pi-badge{display:inline-block;margin-right:6px;padding:2px 7px;border-radius:20px;background:var(--pi-tint);color:var(--pi-red);font-size:10px;font-weight:700;line-height:1.5;vertical-align:middle;}\n\n/* --- مگامنو --- */\n.pi-header .pi-mega{position:absolute!important;top:100%;left:50%;width:min(1200px,calc(100% - 40px))!important;margin-top:-6px;\n  box-shadow:0 30px 60px rgba(43,50,60,.14);border:1px solid var(--pi-line);z-index:20;\n  opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,12px);transition:opacity .25s ease,transform .25s ease,visibility .25s;}\n.pi-header .pi-mega.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);}\n.pi-header .pi-mega-grid{display:grid!important;grid-template-columns:1fr 1fr;gap:4px 14px;}\n.pi-header .pi-mega-grid>.elementor-widget{width:auto!important;margin:0!important;}\n.pi-header .pi-mega-item{position:relative;border-radius:12px;padding:12px;transition:background-color .2s ease;}\n.pi-header .pi-mega-item:hover{background:#F7F8FA;}\n.pi-header .pi-mega-item .elementor-icon{border-radius:12px!important;transition:all .25s ease;}\n.pi-header .pi-mega-item .elementor-icon-box-title a::after{content:\"\";position:absolute;inset:0;}\n.pi-header .pi-mega-item:hover .elementor-icon-box-title,.pi-header .pi-mega-item:hover .elementor-icon-box-title a{color:var(--pi-red)!important;}\n.pi-header .pi-mega-all .elementor-button-icon{transition:transform .25s ease;}\n.pi-header .pi-mega-all:hover .elementor-button-icon{transform:translateX(-4px);}\n.pi-header .pi-mega-card{position:relative;overflow:hidden;}\n.pi-header .pi-mega-card::before,.pi-header .pi-mega-card::after{content:\"\";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14);pointer-events:none;}\n.pi-header .pi-mega-card::before{width:260px;height:260px;left:-110px;bottom:-130px;}\n.pi-header .pi-mega-card::after{width:160px;height:160px;left:-50px;bottom:-70px;background:rgba(255,255,255,.05);}\n.pi-header .pi-mega-card>*{position:relative;z-index:1;}\n@media (max-width:1024px){.pi-header .pi-mega{display:none!important;}}\n\n/* --- جستجوی زنده مینیمال --- */\n.pi-search{position:relative;}\n.pi-search-toggle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:1px solid var(--pi-line);border-radius:50%;background:#fff;color:var(--pi-slate);cursor:pointer;transition:all .25s ease;}\n.pi-search-toggle:hover,.pi-search.is-open .pi-search-toggle{color:var(--pi-red);border-color:var(--pi-red);background:var(--pi-tint);}\n.pi-search-pop{position:absolute;top:calc(100% + 14px);left:0;width:340px;max-width:calc(100vw - 32px);background:#fff;border:1px solid var(--pi-line);border-radius:14px;box-shadow:0 24px 50px rgba(43,50,60,.14);z-index:30;\n  opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility .2s;}\n.pi-search.is-open .pi-search-pop{opacity:1;visibility:visible;transform:none;}\n.pi-search-form{display:flex;align-items:center;gap:8px;margin:0;padding:6px 14px;color:var(--pi-muted);}\n.pi-search-form input[type=search]{flex:1;min-width:0;height:40px;padding:0!important;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:var(--pi-slate);font:inherit;font-size:14px;}\n.pi-search-form input::-webkit-search-cancel-button{display:none;}\n.pi-search-spin{width:14px;height:14px;border:2px solid var(--pi-line);border-top-color:var(--pi-red);border-radius:50%;opacity:0;animation:piSpin .7s linear infinite;}\n.pi-search.is-loading .pi-search-spin{opacity:1;}\n@keyframes piSpin{to{transform:rotate(360deg)}}\n.pi-search-results{max-height:min(60vh,380px);overflow-y:auto;}\n.pi-search-results:not(:empty){border-top:1px solid var(--pi-line);padding:6px;}\n.pi-sr-item{display:flex;align-items:flex-start;gap:10px;padding:10px;border-radius:10px;color:var(--pi-slate)!important;text-decoration:none!important;font-size:13.5px;line-height:1.6;transition:background-color .15s;}\n.pi-sr-item:hover,.pi-sr-item.is-active{background:#F7F8FA;}\n.pi-sr-item:hover .pi-sr-title,.pi-sr-item.is-active .pi-sr-title{color:var(--pi-red);}\n.pi-sr-ic{flex:0 0 30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:var(--pi-tint);color:var(--pi-red);}\n.pi-sr-txt{display:flex;flex-direction:column;min-width:0;}\n.pi-sr-ex{color:var(--pi-muted);font-size:12px;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}\n.pi-sr-ex mark{background:none;color:var(--pi-slate);font-weight:700;padding:0;}\n.pi-sr-type{flex:0 0 auto;padding:1px 8px;border-radius:20px;background:var(--pi-tint);color:var(--pi-red);font-size:10.5px;font-weight:700;}\n.pi-sr-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}\n.pi-sr-title mark{background:none;color:var(--pi-red);font-weight:700;padding:0;}\n.pi-sr-empty{padding:16px 10px;color:var(--pi-muted);font-size:13px;text-align:center;}\n.pi-sr-all{display:block;margin-top:4px;padding:10px;border-top:1px solid var(--pi-line);color:var(--pi-red)!important;font-size:12.5px;font-weight:700;text-align:center;text-decoration:none!important;}\n.pi-search--inline .pi-search-toggle{display:none;}\n.pi-search--inline .pi-search-pop{position:static;width:auto;max-width:none;opacity:1;visibility:visible;transform:none;box-shadow:none;background:#F7F8FA;border-color:transparent;border-radius:12px;}\n.pi-search--inline .pi-search-results:not(:empty){background:#fff;border-radius:0 0 12px 12px;}\n\n/* --- دکمه‌های هدر --- */\n.pi-header .pi-burger .elementor-icon,.pi-header .pi-mcall .elementor-icon{border-radius:12px!important;}\n.pi-header .pi-cta .elementor-button{position:relative;overflow:hidden;animation:piPulse 2.6s infinite;}\n.pi-header .pi-cta .elementor-button::before{content:\"\";position:absolute;top:0;right:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-25deg);animation:piShine 3.2s ease-in-out infinite;}\n@keyframes piPulse{0%{box-shadow:0 0 0 0 rgba(177,26,59,.4)}70%{box-shadow:0 0 0 12px rgba(177,26,59,0)}100%{box-shadow:0 0 0 0 rgba(177,26,59,0)}}\n@keyframes piShine{0%,60%{right:-75%}100%{right:130%}}\n\n/* --- منوی موبایل کشویی (Off-canvas) --- */\n.pi-header .pi-offcanvas{position:fixed!important;top:0;right:0;bottom:0;width:min(88vw,380px)!important;max-width:none!important;height:100vh;height:100dvh;\n  overflow-y:auto;overscroll-behavior:contain;z-index:1001;box-shadow:-20px 0 60px rgba(43,50,60,.2);\n  transform:translateX(105%);visibility:hidden;transition:transform .4s cubic-bezier(.4,0,.2,1),visibility .4s;}\n.pi-header .pi-offcanvas.is-open{transform:none;visibility:visible;}\n.pi-header .pi-offcanvas>.pi-oc-nav{flex:1 0 auto;}\n.pi-overlay{position:fixed;inset:0;z-index:1000;background:rgba(43,50,60,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s;}\n.pi-overlay.is-open{opacity:1;visibility:visible;}\nhtml.pi-lock,html.pi-lock body{overflow:hidden!important;}\n.pi-offcanvas .pi-mnav .elementor-menu-toggle{display:none!important;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown{display:block!important;transform:none!important;max-height:none!important;overflow:visible!important;box-shadow:none!important;position:static!important;width:auto!important;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a{display:flex;align-items:center;border-radius:10px;justify-content:flex-start;transition:background-color .2s,color .2s;}\n.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a.elementor-item-active{font-weight:700;box-shadow:inset -3px 0 0 var(--pi-red);}\n.pi-offcanvas .pi-mnav .sub-menu{margin:2px 14px 6px 0!important;border-right:1px solid var(--pi-line)!important;}\n.pi-offcanvas .pi-mnav .sub-menu a{font-size:14px!important;color:var(--pi-muted)!important;}\n.pi-offcanvas .pi-mnav .sub-arrow{margin-right:auto;transition:transform .25s ease;}\n.pi-offcanvas .pi-mnav a.highlighted .sub-arrow{transform:rotate(180deg);}\n.pi-offcanvas .pi-oc-btns>.elementor-widget{flex:1 1 0;}\n.pi-offcanvas.is-open .pi-oc-nav li{animation:piSlideIn .4s ease both;}\n.pi-offcanvas.is-open .pi-oc-nav li:nth-child(2){animation-delay:.04s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(3){animation-delay:.08s}\n.pi-offcanvas.is-open .pi-oc-nav li:nth-child(4){animation-delay:.12s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(5){animation-delay:.16s}\n.pi-offcanvas.is-open .pi-oc-nav li:nth-child(6){animation-delay:.2s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(n+7){animation-delay:.24s}\n@keyframes piSlideIn{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}\n@media (min-width:1025px){.pi-header .pi-offcanvas{display:none!important;}}\n\n\n/* ================= ریسپانسیو ================= */\n/* لپ‌تاپ کوچک (۱۰۲۵ تا ۱۳۰۰) */\n@media (min-width:1025px) and (max-width:1300px){\n  .pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item{padding-left:9px!important;padding-right:9px!important;font-size:14px!important;}\n  .pi-header .pi-cta .elementor-button{padding:11px 18px!important;font-size:13px!important;}\n  .pi-header .pi-topbar .elementor-icon-list-item:nth-child(3){display:none!important;}\n}\n/* تبلت (۷۶۸ تا ۱۰۲۴) */\n@media (max-width:1024px){\n  .pi-header .pi-topbar .elementor-icon-list-item:nth-child(3){display:none!important;}\n  .pi-header .pi-topbar .elementor-icon-list-item:nth-child(2)::after{display:none!important;}\n  .pi-header .pi-main::after{height:2px;}\n  .pi-header .pi-actions{gap:10px!important;}\n  .pi-header.elementor-sticky--effects .pi-logo img{max-width:58px!important;}\n  .pi-header .pi-offcanvas{width:min(88vw,400px)!important;}\n}\n/* موبایل (تا ۷۶۷) */\n@media (max-width:767px){\n  /* نوار بالا: فقط تلفن + شبکه‌های اجتماعی */\n  .pi-header .pi-topbar{max-height:44px;}\n  .pi-header .pi-topbar .elementor-icon-list-item:not(:first-child){display:none!important;}\n  .pi-header .pi-topbar .elementor-icon-list-item:first-child::after{display:none!important;}\n  .pi-header .pi-topbar .elementor-icon-list-text{font-size:12px!important;direction:ltr;}\n  .pi-header .pi-topbar .elementor-social-icon{font-size:11px!important;padding:.55em!important;}\n  .pi-header .pi-topbar .elementor-grid{--grid-column-gap:4px!important;}\n  /* هدر اصلی */\n  .pi-header .pi-main::after{opacity:.5;}\n  .pi-header.elementor-sticky--effects .pi-logo img{max-width:46px!important;}\n  .pi-header .pi-search-toggle{width:40px;height:40px;border-radius:12px;background:#F5F6F8;border-color:transparent;}\n  .pi-header .pi-burger .elementor-icon{width:40px;height:40px;display:flex!important;align-items:center;justify-content:center;padding:0!important;}\n  /* پنل جستجو تمام‌عرض زیر هدر */\n  .pi-header .pi-main{position:relative!important;}\n  .pi-header .pi-main>.e-con-inner{position:static!important;}\n  .pi-header .pi-actions,.pi-header .pi-search-w,.pi-header .pi-search:not(.pi-search--inline){position:static!important;}\n  .pi-header .pi-search:not(.pi-search--inline) .pi-search-pop{left:12px;right:12px;width:auto;max-width:none;top:calc(100% + 6px);}\n  .pi-search-form input[type=search]{font-size:16px;} /* جلوگیری از زوم خودکار iOS */\n  .pi-search-results{max-height:60vh;}\n  /* منوی کشویی */\n  .pi-header .pi-offcanvas{width:min(90vw,360px)!important;}\n  .pi-offcanvas .pi-oc-head{padding:14px 16px!important;}\n  .pi-offcanvas .pi-oc-foot{padding-bottom:calc(20px + env(safe-area-inset-bottom))!important;}\n}\n@media (max-width:360px){\n  .pi-header .pi-topbar .pi-tb-left{display:none!important;}\n  .pi-header .pi-topbar .pi-tb-right{width:100%!important;justify-content:center;}\n}\n\n/* --- نمایش در ویرایشگر المنتور: مگامنو و منوی موبایل باز می‌مانند تا قابل ویرایش باشند --- */\n.elementor-editor-active .pi-header .pi-mega{position:relative!important;top:auto;left:auto;opacity:1;visibility:visible;pointer-events:auto;transform:none;margin:20px auto!important;}\n.elementor-editor-active .pi-header .pi-offcanvas{position:relative!important;display:flex!important;transform:none;visibility:visible;height:auto;margin:20px auto;outline:2px dashed #C9CED6;}\n.elementor-editor-active .pi-header .pi-mega::before,.elementor-editor-active .pi-header .pi-offcanvas::before{position:absolute;top:-22px;right:0;font-size:11px;color:#7A8491;}\n.elementor-editor-active .pi-header .pi-mega::before{content:\"مگامنو خدمات – در سایت با هاور روی «خدمات» باز می‌شود\";}\n.elementor-editor-active .pi-header .pi-offcanvas::before{content:\"منوی موبایل – در سایت با دکمه همبرگری باز می‌شود\";}\n.elementor-editor-active .pi-header .pi-code{position:relative!important;width:auto!important;height:auto!important;}\n\n@media (prefers-reduced-motion:reduce){.pi-header *,.pi-header *::before,.pi-header *::after{animation:none!important;transition:none!important;}}\n</style>\n\n<script>\n(function(){\n  /* ===== تنظیمات قابل ویرایش ===== */\n  var MEGA_ITEM = 'خدمات ما';          // متن آیتمی از منو که مگامنو را باز می‌کند\n  var BADGES = { 'مقالات': 'جدید' };   // متن آیتم منو : متن برچسب کنار آن\n  var SEARCH_LIMIT = 8;                 // تعداد نتایج جستجوی زنده\n  var SEARCH_TYPE = 'pages';            // فقط برگه‌ها (pages). برای نوشته‌ها: 'posts'\n\n  function ready(fn){ document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }\n  function norm(t){ return (t || '').replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\\u200c\\s]+/g,' ').trim(); }\n  function key(t){ return norm(t).replace(/ /g,''); }\n  function text(a){ var c = a.cloneNode(true); c.querySelectorAll('.sub-arrow,.pi-badge,.pi-mega-arrow').forEach(function(x){x.remove();}); return c.textContent.trim(); }\n\n  ready(function(){\n    var header = document.querySelector('.pi-header'); if (!header) return;\n    var editor = document.body.classList.contains('elementor-editor-active');\n\n    /* --- برچسب‌ها --- */\n    header.querySelectorAll('.pi-nav .elementor-item, .pi-mnav .elementor-item').forEach(function(a){\n      var b = BADGES[text(a)];\n      if (b && !a.querySelector('.pi-badge')) { var s = document.createElement('span'); s.className = 'pi-badge'; s.textContent = b; a.appendChild(s); }\n    });\n    if (editor) return;\n\n    /* --- مگامنو --- */\n    var mega = header.querySelector('.pi-mega'), li = null;\n    header.querySelectorAll('.pi-nav .elementor-nav-menu--main > ul > li').forEach(function(x){\n      var a = x.querySelector(':scope > a');\n      if (!li && (x.classList.contains('pi-mega-trigger') || (a && key(text(a)).indexOf(key(MEGA_ITEM)) === 0))) li = x;\n    });\n    if (mega && li) {\n      var a = li.querySelector(':scope > a'), t;\n      li.classList.add('pi-mega-trigger');\n      if (!a.querySelector('.sub-arrow')) {\n        var arr = document.createElement('span'); arr.className = 'pi-mega-arrow';\n        arr.innerHTML = '<svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" aria-hidden=\"true\"><path d=\"M2 3.5l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>';\n        a.appendChild(arr);\n      }\n      /* لینک‌های مگامنو خودکار از زیرمنوی وردپرس خوانده می‌شوند */\n      var map = {};\n      li.querySelectorAll('.sub-menu a[href]').forEach(function(s){ map[key(text(s))] = s.getAttribute('href'); });\n      mega.querySelectorAll('.pi-mega-item').forEach(function(it){\n        var tt = it.querySelector('.elementor-icon-box-title'); var h = tt && map[key(tt.textContent)];\n        if (h) it.querySelectorAll('a').forEach(function(x){ x.setAttribute('href', h); });\n      });\n      var own = a.getAttribute('href');\n      if (own && own.charAt(0) !== '#') mega.querySelectorAll('.pi-mega-all a').forEach(function(x){ x.setAttribute('href', own); });\n      a.setAttribute('aria-haspopup', 'true'); a.setAttribute('aria-expanded', 'false');\n      var open  = function(){ clearTimeout(t); mega.classList.add('is-open'); li.classList.add('is-mega-open'); a.setAttribute('aria-expanded','true'); };\n      var shut  = function(){ mega.classList.remove('is-open'); li.classList.remove('is-mega-open'); a.setAttribute('aria-expanded','false'); };\n      var close = function(){ clearTimeout(t); t = setTimeout(shut, 180); };\n      [li, mega].forEach(function(el){ el.addEventListener('mouseenter', open); el.addEventListener('mouseleave', close); });\n      li.addEventListener('focusin', open); mega.addEventListener('focusin', open);\n      mega.addEventListener('focusout', function(e){ if (!mega.contains(e.relatedTarget) && !li.contains(e.relatedTarget)) close(); });\n      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') shut(); });\n    }\n\n\n    /* --- جستجوی زنده (WordPress REST API) --- */\n    var apiLink = document.querySelector('link[rel=\"https://api.w.org/\"]');\n    var API = (apiLink ? apiLink.href : location.origin + '/wp-json/').replace(/\\/?$/, '/');\n    var HOME = API.replace(/wp-json\\/$/, '').replace(/\\?rest_route=\\/$/, '');\n    var cache = {};\n    function esc(t){ var d = document.createElement('div'); d.textContent = t; return d.innerHTML; }\n    function decode(h){ return new DOMParser().parseFromString(h || '', 'text/html').documentElement.textContent; }\n    function mark(t, q){\n      var safe = esc(t), words = q.split(' ').filter(function(w){ return w.length > 1; }).map(function(w){ return esc(w).replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&'); });\n      return words.length ? safe.replace(new RegExp('(' + words.join('|') + ')', 'gi'), '<mark>$1</mark>') : safe;\n    }\n    header.querySelectorAll('.pi-search').forEach(function(root){\n      var input = root.querySelector('input[type=search]'), box = root.querySelector('.pi-search-results'), form = root.querySelector('form'), tog = root.querySelector('.pi-search-toggle');\n      var inline = root.classList.contains('pi-search--inline'), timer, ctrl, active = -1;\n      form.setAttribute('action', HOME);\n      var pt = SEARCH_TYPE === 'posts' ? 'post' : 'page';\n      var hid = form.querySelector('input[name=post_type]'); if (hid) hid.value = pt;\n      function allUrl(q){ return HOME + '?s=' + encodeURIComponent(q) + '&post_type=' + pt; }\n      function snippet(t, q){\n        t = norm(t); var w = q.split(' ')[0], i = t.indexOf(w);\n        if (i > 40) t = '…' + t.slice(i - 30);\n        return t.length > 110 ? t.slice(0, 110) + '…' : t;\n      }\n      function items(){ return box.querySelectorAll('.pi-sr-item'); }\n      function setActive(i){ var l = items(); if (!l.length) return; active = (i + l.length) % l.length; l.forEach(function(x, j){ x.classList.toggle('is-active', j === active); x.setAttribute('aria-selected', j === active); }); l[active].scrollIntoView({block:'nearest'}); }\n      function render(q, data){\n        active = -1; root.classList.remove('is-loading');\n        if (!data.length) { box.innerHTML = '<div class=\"pi-sr-empty\">نتیجه‌ای برای «' + esc(q) + '» پیدا نشد.</div>'; return; }\n        box.innerHTML = data.map(function(r){\n          var ex = snippet(decode(r.excerpt && r.excerpt.rendered), q);\n          return '<a class=\"pi-sr-item\" role=\"option\" href=\"' + esc(r.link) + '\"><span class=\"pi-sr-ic\" aria-hidden=\"true\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\"><path d=\"M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z M14 3v5h5 M9 13h6 M9 17h4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span>'\n            + '<span class=\"pi-sr-txt\"><span class=\"pi-sr-title\">' + mark(decode(r.title && r.title.rendered), q) + '</span>'\n            + (ex ? '<span class=\"pi-sr-ex\">' + mark(ex, q) + '</span>' : '') + '</span></a>';\n        }).join('') + '<a class=\"pi-sr-all\" href=\"' + esc(allUrl(q)) + '\">مشاهده همه نتایج «' + esc(q) + '»</a>';\n      }\n      function run(q){\n        if (cache[q]) return render(q, cache[q]);\n        if (ctrl) ctrl.abort(); ctrl = window.AbortController ? new AbortController() : null;\n        root.classList.add('is-loading');\n        fetch(API + 'wp/v2/' + SEARCH_TYPE + '?search=' + encodeURIComponent(q) + '&per_page=' + SEARCH_LIMIT + '&orderby=relevance&_fields=id,title,link,excerpt', ctrl ? {signal: ctrl.signal} : {})\n          .then(function(r){ return r.ok ? r.json() : []; })\n          .then(function(d){ d = Array.isArray(d) ? d : []; cache[q] = d; if (norm(input.value) === q) render(q, d); })\n          .catch(function(e){ if (e.name !== 'AbortError') { root.classList.remove('is-loading'); box.innerHTML = '<a class=\"pi-sr-all\" href=\"' + esc(allUrl(q)) + '\">جستجوی «' + esc(q) + '» در سایت</a>'; } });\n      }\n      input.addEventListener('input', function(){\n        clearTimeout(timer); var q = norm(input.value);\n        root.classList.toggle('has-query', q.length > 0);\n        if (q.length < 2) { if (ctrl) ctrl.abort(); root.classList.remove('is-loading'); box.innerHTML = ''; return; }\n        timer = setTimeout(function(){ run(q); }, 280);\n      });\n      input.addEventListener('keydown', function(e){\n        if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }\n        else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }\n        else if (e.key === 'Enter' && active > -1) { e.preventDefault(); items()[active].click(); }\n        else if (e.key === 'Escape' && !inline) { e.stopPropagation(); closeS(); tog.focus(); }\n      });\n      form.addEventListener('submit', function(e){ var q = norm(input.value); if (!q) { e.preventDefault(); return; } input.value = q; });\n      function openS(){ root.classList.add('is-open'); tog.setAttribute('aria-expanded','true'); setTimeout(function(){ input.focus(); }, 60); }\n      function closeS(){ root.classList.remove('is-open'); tog.setAttribute('aria-expanded','false'); }\n      if (!inline) {\n        tog.addEventListener('click', function(){ root.classList.contains('is-open') ? closeS() : openS(); });\n        document.addEventListener('click', function(e){ if (!root.contains(e.target)) closeS(); });\n        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeS(); });\n      }\n    });\n\n    /* --- منوی موبایل کشویی --- */\n    var oc = header.querySelector('.pi-offcanvas');\n    if (oc) {\n      var ov = document.createElement('div'); ov.className = 'pi-overlay'; header.appendChild(ov);\n      oc.setAttribute('role', 'dialog'); oc.setAttribute('aria-modal', 'true'); oc.setAttribute('aria-label', 'منوی سایت'); oc.id = oc.id || 'pi-menu';\n      var burgers = header.querySelectorAll('.pi-burger a, .pi-burger .elementor-icon');\n      var openOC = function(e){ if (e) e.preventDefault(); oc.classList.add('is-open'); ov.classList.add('is-open'); document.documentElement.classList.add('pi-lock');\n        burgers.forEach(function(b){ b.setAttribute('aria-expanded','true'); }); var c = oc.querySelector('.pi-close a'); if (c) c.focus(); };\n      var closeOC = function(e){ if (e) e.preventDefault(); if (!oc.classList.contains('is-open')) return; oc.classList.remove('is-open'); ov.classList.remove('is-open'); document.documentElement.classList.remove('pi-lock');\n        burgers.forEach(function(b){ b.setAttribute('aria-expanded','false'); }); };\n      burgers.forEach(function(b){ b.setAttribute('aria-controls', oc.id); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-label','باز کردن منو'); b.addEventListener('click', openOC); });\n      oc.querySelectorAll('.pi-close a, .pi-close .elementor-icon').forEach(function(b){ b.setAttribute('aria-label','بستن منو'); b.addEventListener('click', closeOC); });\n      ov.addEventListener('click', closeOC);\n      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeOC(); });\n      oc.querySelectorAll('.pi-mnav a[href]').forEach(function(l){\n        l.addEventListener('click', function(){ var h = l.getAttribute('href'); if (h && h.charAt(0) !== '#' && !l.parentElement.classList.contains('menu-item-has-children')) closeOC(); });\n      });\n      window.addEventListener('resize', function(){ if (window.innerWidth > 1024) closeOC(); });\n    }\n  });\n})();\n</script>\n",
             "_css_classes": "pi-code"
           },
           "elements": [],

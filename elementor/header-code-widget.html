@@ -1,0 +1,336 @@
+<style>
+/* ===== هدر بازرگانی پردیس – رنگ‌ها را از این‌جا تغییر دهید ===== */
+:root{--pi-red:#B11A3B;--pi-red2:#7E1029;--pi-slate:#3E4753;--pi-muted:#7A8491;--pi-tint:#F9EEF1;--pi-line:#ECEEF1;}
+.pi-header{transition:all .35s ease;}
+.pi-header .pi-code{position:absolute!important;width:0!important;height:0!important;overflow:hidden;}
+
+/* --- Top bar: جمع می‌شود هنگام اسکرول --- */
+.pi-header .pi-topbar{max-height:60px;overflow:hidden;transition:max-height .4s ease,padding .4s ease,opacity .3s ease;}
+.pi-header.elementor-sticky--effects .pi-topbar{max-height:0;padding-top:0!important;padding-bottom:0!important;opacity:0;}
+
+/* --- Main bar --- */
+.pi-header .pi-main{position:relative;transition:all .35s ease;}
+.pi-header.elementor-sticky--effects .pi-main{background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 12px 35px rgba(43,50,60,.12);padding-top:6px!important;padding-bottom:6px!important;}
+.pi-header .pi-main::after{content:"";position:absolute;inset:auto 0 0 0;height:2px;background:linear-gradient(90deg,transparent,var(--pi-red),var(--pi-slate),var(--pi-red),transparent);background-size:200% 100%;animation:piLine 7s linear infinite;opacity:.8;}
+@keyframes piLine{to{background-position:200% 0}}
+.pi-header .pi-logo img{transition:max-width .35s ease;}
+.pi-header.elementor-sticky--effects .pi-logo img{max-width:64px!important;}
+
+/* --- منو دقیقاً در وسط هدر --- */
+@media (min-width:1025px){
+  .pi-header .pi-main>.e-con-inner>.pi-brand,.pi-header .pi-main>.e-con-inner>.pi-actions,
+  .pi-header .pi-main>.pi-brand,.pi-header .pi-main>.pi-actions{flex:1 1 0!important;min-width:0;}
+  .pi-header .pi-nav{flex:0 0 auto!important;}
+}
+@media (max-width:1280px){.pi-header .pi-tagline{display:none;}}
+
+/* --- منوی اصلی مینیمال --- */
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item{position:relative;transition:color .25s ease;}
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item::after{content:"";position:absolute;bottom:3px;left:50%;width:18px;height:2px;margin-left:-9px;border-radius:2px;background:var(--pi-red);transform:scaleX(0);transition:transform .3s cubic-bezier(.4,0,.2,1);}
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item:hover::after,
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.highlighted::after,
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li.is-mega-open>.elementor-item::after,
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.elementor-item-active::after{transform:scaleX(1);}
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item.elementor-item-active{font-weight:700;}
+.pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li.is-mega-open>.elementor-item{color:var(--pi-red)!important;}
+.pi-header .pi-nav .sub-arrow,.pi-header .pi-mega-arrow{opacity:.55;font-size:.7em;display:inline-flex;margin-right:5px;transition:transform .25s ease,opacity .25s ease;}
+.pi-header .pi-nav li:hover>.elementor-item .sub-arrow,.pi-header .pi-nav li.is-mega-open .pi-mega-arrow{transform:rotate(180deg);opacity:1;}
+.pi-header .pi-nav .elementor-nav-menu--main .sub-menu{padding:8px!important;border:1px solid var(--pi-line);min-width:220px!important;animation:piDrop .22s ease-out;}
+.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item{border-radius:8px;transition:background-color .2s,color .2s,padding .2s;}
+.pi-header .pi-nav .elementor-nav-menu--main .sub-menu .elementor-sub-item:hover{padding-right:22px!important;}
+.pi-header .pi-nav li.pi-mega-trigger>.sub-menu{display:none!important;}
+@keyframes piDrop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* --- برچسب کنار آیتم منو --- */
+.pi-badge{display:inline-block;margin-right:6px;padding:2px 7px;border-radius:20px;background:var(--pi-tint);color:var(--pi-red);font-size:10px;font-weight:700;line-height:1.5;vertical-align:middle;}
+
+/* --- مگامنو --- */
+.pi-header .pi-mega{position:absolute!important;top:100%;left:50%;width:min(1200px,calc(100% - 40px))!important;margin-top:-6px;
+  box-shadow:0 30px 60px rgba(43,50,60,.14);border:1px solid var(--pi-line);z-index:20;
+  opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,12px);transition:opacity .25s ease,transform .25s ease,visibility .25s;}
+.pi-header .pi-mega.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);}
+.pi-header .pi-mega-grid{display:grid!important;grid-template-columns:1fr 1fr;gap:4px 14px;}
+.pi-header .pi-mega-grid>.elementor-widget{width:auto!important;margin:0!important;}
+.pi-header .pi-mega-item{position:relative;border-radius:12px;padding:12px;transition:background-color .2s ease;}
+.pi-header .pi-mega-item:hover{background:#F7F8FA;}
+.pi-header .pi-mega-item .elementor-icon{border-radius:12px!important;transition:all .25s ease;}
+.pi-header .pi-mega-item .elementor-icon-box-title a::after{content:"";position:absolute;inset:0;}
+.pi-header .pi-mega-item:hover .elementor-icon-box-title,.pi-header .pi-mega-item:hover .elementor-icon-box-title a{color:var(--pi-red)!important;}
+.pi-header .pi-mega-all .elementor-button-icon{transition:transform .25s ease;}
+.pi-header .pi-mega-all:hover .elementor-button-icon{transform:translateX(-4px);}
+.pi-header .pi-mega-card{position:relative;overflow:hidden;}
+.pi-header .pi-mega-card::before,.pi-header .pi-mega-card::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14);pointer-events:none;}
+.pi-header .pi-mega-card::before{width:260px;height:260px;left:-110px;bottom:-130px;}
+.pi-header .pi-mega-card::after{width:160px;height:160px;left:-50px;bottom:-70px;background:rgba(255,255,255,.05);}
+.pi-header .pi-mega-card>*{position:relative;z-index:1;}
+@media (max-width:1024px){.pi-header .pi-mega{display:none!important;}}
+
+/* --- جستجوی زنده مینیمال --- */
+.pi-search{position:relative;}
+.pi-search-toggle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:1px solid var(--pi-line);border-radius:50%;background:#fff;color:var(--pi-slate);cursor:pointer;transition:all .25s ease;}
+.pi-search-toggle:hover,.pi-search.is-open .pi-search-toggle{color:var(--pi-red);border-color:var(--pi-red);background:var(--pi-tint);}
+.pi-search-pop{position:absolute;top:calc(100% + 14px);left:0;width:340px;max-width:calc(100vw - 32px);background:#fff;border:1px solid var(--pi-line);border-radius:14px;box-shadow:0 24px 50px rgba(43,50,60,.14);z-index:30;
+  opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility .2s;}
+.pi-search.is-open .pi-search-pop{opacity:1;visibility:visible;transform:none;}
+.pi-search-form{display:flex;align-items:center;gap:8px;margin:0;padding:6px 14px;color:var(--pi-muted);}
+.pi-search-form input[type=search]{flex:1;min-width:0;height:40px;padding:0!important;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:var(--pi-slate);font:inherit;font-size:14px;}
+.pi-search-form input::-webkit-search-cancel-button{display:none;}
+.pi-search-spin{width:14px;height:14px;border:2px solid var(--pi-line);border-top-color:var(--pi-red);border-radius:50%;opacity:0;animation:piSpin .7s linear infinite;}
+.pi-search.is-loading .pi-search-spin{opacity:1;}
+@keyframes piSpin{to{transform:rotate(360deg)}}
+.pi-search-results{max-height:min(60vh,380px);overflow-y:auto;}
+.pi-search-results:not(:empty){border-top:1px solid var(--pi-line);padding:6px;}
+.pi-sr-item{display:flex;align-items:flex-start;gap:10px;padding:10px;border-radius:10px;color:var(--pi-slate)!important;text-decoration:none!important;font-size:13.5px;line-height:1.6;transition:background-color .15s;}
+.pi-sr-item:hover,.pi-sr-item.is-active{background:#F7F8FA;}
+.pi-sr-item:hover .pi-sr-title,.pi-sr-item.is-active .pi-sr-title{color:var(--pi-red);}
+.pi-sr-ic{flex:0 0 30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:var(--pi-tint);color:var(--pi-red);}
+.pi-sr-txt{display:flex;flex-direction:column;min-width:0;}
+.pi-sr-ex{color:var(--pi-muted);font-size:12px;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.pi-sr-ex mark{background:none;color:var(--pi-slate);font-weight:700;padding:0;}
+.pi-sr-type{flex:0 0 auto;padding:1px 8px;border-radius:20px;background:var(--pi-tint);color:var(--pi-red);font-size:10.5px;font-weight:700;}
+.pi-sr-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pi-sr-title mark{background:none;color:var(--pi-red);font-weight:700;padding:0;}
+.pi-sr-empty{padding:16px 10px;color:var(--pi-muted);font-size:13px;text-align:center;}
+.pi-sr-all{display:block;margin-top:4px;padding:10px;border-top:1px solid var(--pi-line);color:var(--pi-red)!important;font-size:12.5px;font-weight:700;text-align:center;text-decoration:none!important;}
+.pi-search--inline .pi-search-toggle{display:none;}
+.pi-search--inline .pi-search-pop{position:static;width:auto;max-width:none;opacity:1;visibility:visible;transform:none;box-shadow:none;background:#F7F8FA;border-color:transparent;border-radius:12px;}
+.pi-search--inline .pi-search-results:not(:empty){background:#fff;border-radius:0 0 12px 12px;}
+
+/* --- دکمه‌های هدر --- */
+.pi-header .pi-burger .elementor-icon,.pi-header .pi-mcall .elementor-icon{border-radius:12px!important;}
+.pi-header .pi-cta .elementor-button{position:relative;overflow:hidden;animation:piPulse 2.6s infinite;}
+.pi-header .pi-cta .elementor-button::before{content:"";position:absolute;top:0;right:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-25deg);animation:piShine 3.2s ease-in-out infinite;}
+@keyframes piPulse{0%{box-shadow:0 0 0 0 rgba(177,26,59,.4)}70%{box-shadow:0 0 0 12px rgba(177,26,59,0)}100%{box-shadow:0 0 0 0 rgba(177,26,59,0)}}
+@keyframes piShine{0%,60%{right:-75%}100%{right:130%}}
+
+/* --- منوی موبایل کشویی (Off-canvas) --- */
+.pi-header .pi-offcanvas{position:fixed!important;top:0;right:0;bottom:0;width:min(88vw,380px)!important;max-width:none!important;height:100vh;height:100dvh;
+  overflow-y:auto;overscroll-behavior:contain;z-index:1001;box-shadow:-20px 0 60px rgba(43,50,60,.2);
+  transform:translateX(105%);visibility:hidden;transition:transform .4s cubic-bezier(.4,0,.2,1),visibility .4s;}
+.pi-header .pi-offcanvas.is-open{transform:none;visibility:visible;}
+.pi-header .pi-offcanvas>.pi-oc-nav{flex:1 0 auto;}
+.pi-overlay{position:fixed;inset:0;z-index:1000;background:rgba(43,50,60,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s;}
+.pi-overlay.is-open{opacity:1;visibility:visible;}
+html.pi-lock,html.pi-lock body{overflow:hidden!important;}
+.pi-offcanvas .pi-mnav .elementor-menu-toggle{display:none!important;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown{display:block!important;transform:none!important;max-height:none!important;overflow:visible!important;box-shadow:none!important;position:static!important;width:auto!important;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a{display:flex;align-items:center;border-radius:10px;justify-content:flex-start;transition:background-color .2s,color .2s;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a.elementor-item-active{font-weight:700;box-shadow:inset -3px 0 0 var(--pi-red);}
+.pi-offcanvas .pi-mnav .sub-menu{margin:2px 14px 6px 0!important;border-right:1px solid var(--pi-line)!important;}
+.pi-offcanvas .pi-mnav .sub-menu a{font-size:14px!important;color:var(--pi-muted)!important;}
+.pi-offcanvas .pi-mnav .sub-arrow{margin-right:auto;transition:transform .25s ease;}
+.pi-offcanvas .pi-mnav a.highlighted .sub-arrow{transform:rotate(180deg);}
+.pi-offcanvas .pi-oc-btns>.elementor-widget{flex:1 1 0;}
+.pi-offcanvas.is-open .pi-oc-nav li{animation:piSlideIn .4s ease both;}
+.pi-offcanvas.is-open .pi-oc-nav li:nth-child(2){animation-delay:.04s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(3){animation-delay:.08s}
+.pi-offcanvas.is-open .pi-oc-nav li:nth-child(4){animation-delay:.12s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(5){animation-delay:.16s}
+.pi-offcanvas.is-open .pi-oc-nav li:nth-child(6){animation-delay:.2s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(n+7){animation-delay:.24s}
+@keyframes piSlideIn{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+@media (min-width:1025px){.pi-header .pi-offcanvas{display:none!important;}}
+
+
+/* ================= ریسپانسیو ================= */
+/* لپ‌تاپ کوچک (۱۰۲۵ تا ۱۳۰۰) */
+@media (min-width:1025px) and (max-width:1300px){
+  .pi-header .pi-nav .elementor-nav-menu--main>.elementor-nav-menu>li>.elementor-item{padding-left:9px!important;padding-right:9px!important;font-size:14px!important;}
+  .pi-header .pi-cta .elementor-button{padding:11px 18px!important;font-size:13px!important;}
+  .pi-header .pi-topbar .elementor-icon-list-item:nth-child(3){display:none!important;}
+}
+/* تبلت (۷۶۸ تا ۱۰۲۴) */
+@media (max-width:1024px){
+  .pi-header .pi-topbar .elementor-icon-list-item:nth-child(3){display:none!important;}
+  .pi-header .pi-topbar .elementor-icon-list-item:nth-child(2)::after{display:none!important;}
+  .pi-header .pi-main::after{height:2px;}
+  .pi-header .pi-actions{gap:10px!important;}
+  .pi-header.elementor-sticky--effects .pi-logo img{max-width:58px!important;}
+  .pi-header .pi-offcanvas{width:min(88vw,400px)!important;}
+}
+/* موبایل (تا ۷۶۷) */
+@media (max-width:767px){
+  /* نوار بالا: فقط تلفن + شبکه‌های اجتماعی */
+  .pi-header .pi-topbar{max-height:44px;}
+  .pi-header .pi-topbar .elementor-icon-list-item:not(:first-child){display:none!important;}
+  .pi-header .pi-topbar .elementor-icon-list-item:first-child::after{display:none!important;}
+  .pi-header .pi-topbar .elementor-icon-list-text{font-size:12px!important;direction:ltr;}
+  .pi-header .pi-topbar .elementor-social-icon{font-size:11px!important;padding:.55em!important;}
+  .pi-header .pi-topbar .elementor-grid{--grid-column-gap:4px!important;}
+  /* هدر اصلی */
+  .pi-header .pi-main::after{opacity:.5;}
+  .pi-header.elementor-sticky--effects .pi-logo img{max-width:46px!important;}
+  .pi-header .pi-search-toggle{width:40px;height:40px;border-radius:12px;background:#F5F6F8;border-color:transparent;}
+  .pi-header .pi-burger .elementor-icon{width:40px;height:40px;display:flex!important;align-items:center;justify-content:center;padding:0!important;}
+  /* پنل جستجو تمام‌عرض زیر هدر */
+  .pi-header .pi-main{position:relative!important;}
+  .pi-header .pi-main>.e-con-inner{position:static!important;}
+  .pi-header .pi-actions,.pi-header .pi-search-w,.pi-header .pi-search:not(.pi-search--inline){position:static!important;}
+  .pi-header .pi-search:not(.pi-search--inline) .pi-search-pop{left:12px;right:12px;width:auto;max-width:none;top:calc(100% + 6px);}
+  .pi-search-form input[type=search]{font-size:16px;} /* جلوگیری از زوم خودکار iOS */
+  .pi-search-results{max-height:60vh;}
+  /* منوی کشویی */
+  .pi-header .pi-offcanvas{width:min(90vw,360px)!important;}
+  .pi-offcanvas .pi-oc-head{padding:14px 16px!important;}
+  .pi-offcanvas .pi-oc-foot{padding-bottom:calc(20px + env(safe-area-inset-bottom))!important;}
+}
+@media (max-width:360px){
+  .pi-header .pi-topbar .pi-tb-left{display:none!important;}
+  .pi-header .pi-topbar .pi-tb-right{width:100%!important;justify-content:center;}
+}
+
+/* --- نمایش در ویرایشگر المنتور: مگامنو و منوی موبایل باز می‌مانند تا قابل ویرایش باشند --- */
+.elementor-editor-active .pi-header .pi-mega{position:relative!important;top:auto;left:auto;opacity:1;visibility:visible;pointer-events:auto;transform:none;margin:20px auto!important;}
+.elementor-editor-active .pi-header .pi-offcanvas{position:relative!important;display:flex!important;transform:none;visibility:visible;height:auto;margin:20px auto;outline:2px dashed #C9CED6;}
+.elementor-editor-active .pi-header .pi-mega::before,.elementor-editor-active .pi-header .pi-offcanvas::before{position:absolute;top:-22px;right:0;font-size:11px;color:#7A8491;}
+.elementor-editor-active .pi-header .pi-mega::before{content:"مگامنو خدمات – در سایت با هاور روی «خدمات» باز می‌شود";}
+.elementor-editor-active .pi-header .pi-offcanvas::before{content:"منوی موبایل – در سایت با دکمه همبرگری باز می‌شود";}
+.elementor-editor-active .pi-header .pi-code{position:relative!important;width:auto!important;height:auto!important;}
+
+@media (prefers-reduced-motion:reduce){.pi-header *,.pi-header *::before,.pi-header *::after{animation:none!important;transition:none!important;}}
+</style>
+
+<script>
+(function(){
+  /* ===== تنظیمات قابل ویرایش ===== */
+  var MEGA_ITEM = 'خدمات ما';          // متن آیتمی از منو که مگامنو را باز می‌کند
+  var BADGES = { 'مقالات': 'جدید' };   // متن آیتم منو : متن برچسب کنار آن
+  var SEARCH_LIMIT = 8;                 // تعداد نتایج جستجوی زنده
+  var SEARCH_TYPE = 'pages';            // فقط برگه‌ها (pages). برای نوشته‌ها: 'posts'
+
+  function ready(fn){ document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
+  function norm(t){ return (t || '').replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\s]+/g,' ').trim(); }
+  function key(t){ return norm(t).replace(/ /g,''); }
+  function text(a){ var c = a.cloneNode(true); c.querySelectorAll('.sub-arrow,.pi-badge,.pi-mega-arrow').forEach(function(x){x.remove();}); return c.textContent.trim(); }
+
+  ready(function(){
+    var header = document.querySelector('.pi-header'); if (!header) return;
+    var editor = document.body.classList.contains('elementor-editor-active');
+
+    /* --- برچسب‌ها --- */
+    header.querySelectorAll('.pi-nav .elementor-item, .pi-mnav .elementor-item').forEach(function(a){
+      var b = BADGES[text(a)];
+      if (b && !a.querySelector('.pi-badge')) { var s = document.createElement('span'); s.className = 'pi-badge'; s.textContent = b; a.appendChild(s); }
+    });
+    if (editor) return;
+
+    /* --- مگامنو --- */
+    var mega = header.querySelector('.pi-mega'), li = null;
+    header.querySelectorAll('.pi-nav .elementor-nav-menu--main > ul > li').forEach(function(x){
+      var a = x.querySelector(':scope > a');
+      if (!li && (x.classList.contains('pi-mega-trigger') || (a && key(text(a)).indexOf(key(MEGA_ITEM)) === 0))) li = x;
+    });
+    if (mega && li) {
+      var a = li.querySelector(':scope > a'), t;
+      li.classList.add('pi-mega-trigger');
+      if (!a.querySelector('.sub-arrow')) {
+        var arr = document.createElement('span'); arr.className = 'pi-mega-arrow';
+        arr.innerHTML = '<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        a.appendChild(arr);
+      }
+      /* لینک‌های مگامنو خودکار از زیرمنوی وردپرس خوانده می‌شوند */
+      var map = {};
+      li.querySelectorAll('.sub-menu a[href]').forEach(function(s){ map[key(text(s))] = s.getAttribute('href'); });
+      mega.querySelectorAll('.pi-mega-item').forEach(function(it){
+        var tt = it.querySelector('.elementor-icon-box-title'); var h = tt && map[key(tt.textContent)];
+        if (h) it.querySelectorAll('a').forEach(function(x){ x.setAttribute('href', h); });
+      });
+      var own = a.getAttribute('href');
+      if (own && own.charAt(0) !== '#') mega.querySelectorAll('.pi-mega-all a').forEach(function(x){ x.setAttribute('href', own); });
+      a.setAttribute('aria-haspopup', 'true'); a.setAttribute('aria-expanded', 'false');
+      var open  = function(){ clearTimeout(t); mega.classList.add('is-open'); li.classList.add('is-mega-open'); a.setAttribute('aria-expanded','true'); };
+      var shut  = function(){ mega.classList.remove('is-open'); li.classList.remove('is-mega-open'); a.setAttribute('aria-expanded','false'); };
+      var close = function(){ clearTimeout(t); t = setTimeout(shut, 180); };
+      [li, mega].forEach(function(el){ el.addEventListener('mouseenter', open); el.addEventListener('mouseleave', close); });
+      li.addEventListener('focusin', open); mega.addEventListener('focusin', open);
+      mega.addEventListener('focusout', function(e){ if (!mega.contains(e.relatedTarget) && !li.contains(e.relatedTarget)) close(); });
+      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') shut(); });
+    }
+
+
+    /* --- جستجوی زنده (WordPress REST API) --- */
+    var apiLink = document.querySelector('link[rel="https://api.w.org/"]');
+    var API = (apiLink ? apiLink.href : location.origin + '/wp-json/').replace(/\/?$/, '/');
+    var HOME = API.replace(/wp-json\/$/, '').replace(/\?rest_route=\/$/, '');
+    var cache = {};
+    function esc(t){ var d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+    function decode(h){ return new DOMParser().parseFromString(h || '', 'text/html').documentElement.textContent; }
+    function mark(t, q){
+      var safe = esc(t), words = q.split(' ').filter(function(w){ return w.length > 1; }).map(function(w){ return esc(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+      return words.length ? safe.replace(new RegExp('(' + words.join('|') + ')', 'gi'), '<mark>$1</mark>') : safe;
+    }
+    header.querySelectorAll('.pi-search').forEach(function(root){
+      var input = root.querySelector('input[type=search]'), box = root.querySelector('.pi-search-results'), form = root.querySelector('form'), tog = root.querySelector('.pi-search-toggle');
+      var inline = root.classList.contains('pi-search--inline'), timer, ctrl, active = -1;
+      form.setAttribute('action', HOME);
+      var pt = SEARCH_TYPE === 'posts' ? 'post' : 'page';
+      var hid = form.querySelector('input[name=post_type]'); if (hid) hid.value = pt;
+      function allUrl(q){ return HOME + '?s=' + encodeURIComponent(q) + '&post_type=' + pt; }
+      function snippet(t, q){
+        t = norm(t); var w = q.split(' ')[0], i = t.indexOf(w);
+        if (i > 40) t = '…' + t.slice(i - 30);
+        return t.length > 110 ? t.slice(0, 110) + '…' : t;
+      }
+      function items(){ return box.querySelectorAll('.pi-sr-item'); }
+      function setActive(i){ var l = items(); if (!l.length) return; active = (i + l.length) % l.length; l.forEach(function(x, j){ x.classList.toggle('is-active', j === active); x.setAttribute('aria-selected', j === active); }); l[active].scrollIntoView({block:'nearest'}); }
+      function render(q, data){
+        active = -1; root.classList.remove('is-loading');
+        if (!data.length) { box.innerHTML = '<div class="pi-sr-empty">نتیجه‌ای برای «' + esc(q) + '» پیدا نشد.</div>'; return; }
+        box.innerHTML = data.map(function(r){
+          var ex = snippet(decode(r.excerpt && r.excerpt.rendered), q);
+          return '<a class="pi-sr-item" role="option" href="' + esc(r.link) + '"><span class="pi-sr-ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z M14 3v5h5 M9 13h6 M9 17h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+            + '<span class="pi-sr-txt"><span class="pi-sr-title">' + mark(decode(r.title && r.title.rendered), q) + '</span>'
+            + (ex ? '<span class="pi-sr-ex">' + mark(ex, q) + '</span>' : '') + '</span></a>';
+        }).join('') + '<a class="pi-sr-all" href="' + esc(allUrl(q)) + '">مشاهده همه نتایج «' + esc(q) + '»</a>';
+      }
+      function run(q){
+        if (cache[q]) return render(q, cache[q]);
+        if (ctrl) ctrl.abort(); ctrl = window.AbortController ? new AbortController() : null;
+        root.classList.add('is-loading');
+        fetch(API + 'wp/v2/' + SEARCH_TYPE + '?search=' + encodeURIComponent(q) + '&per_page=' + SEARCH_LIMIT + '&orderby=relevance&_fields=id,title,link,excerpt', ctrl ? {signal: ctrl.signal} : {})
+          .then(function(r){ return r.ok ? r.json() : []; })
+          .then(function(d){ d = Array.isArray(d) ? d : []; cache[q] = d; if (norm(input.value) === q) render(q, d); })
+          .catch(function(e){ if (e.name !== 'AbortError') { root.classList.remove('is-loading'); box.innerHTML = '<a class="pi-sr-all" href="' + esc(allUrl(q)) + '">جستجوی «' + esc(q) + '» در سایت</a>'; } });
+      }
+      input.addEventListener('input', function(){
+        clearTimeout(timer); var q = norm(input.value);
+        root.classList.toggle('has-query', q.length > 0);
+        if (q.length < 2) { if (ctrl) ctrl.abort(); root.classList.remove('is-loading'); box.innerHTML = ''; return; }
+        timer = setTimeout(function(){ run(q); }, 280);
+      });
+      input.addEventListener('keydown', function(e){
+        if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+        else if (e.key === 'Enter' && active > -1) { e.preventDefault(); items()[active].click(); }
+        else if (e.key === 'Escape' && !inline) { e.stopPropagation(); closeS(); tog.focus(); }
+      });
+      form.addEventListener('submit', function(e){ var q = norm(input.value); if (!q) { e.preventDefault(); return; } input.value = q; });
+      function openS(){ root.classList.add('is-open'); tog.setAttribute('aria-expanded','true'); setTimeout(function(){ input.focus(); }, 60); }
+      function closeS(){ root.classList.remove('is-open'); tog.setAttribute('aria-expanded','false'); }
+      if (!inline) {
+        tog.addEventListener('click', function(){ root.classList.contains('is-open') ? closeS() : openS(); });
+        document.addEventListener('click', function(e){ if (!root.contains(e.target)) closeS(); });
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeS(); });
+      }
+    });
+
+    /* --- منوی موبایل کشویی --- */
+    var oc = header.querySelector('.pi-offcanvas');
+    if (oc) {
+      var ov = document.createElement('div'); ov.className = 'pi-overlay'; header.appendChild(ov);
+      oc.setAttribute('role', 'dialog'); oc.setAttribute('aria-modal', 'true'); oc.setAttribute('aria-label', 'منوی سایت'); oc.id = oc.id || 'pi-menu';
+      var burgers = header.querySelectorAll('.pi-burger a, .pi-burger .elementor-icon');
+      var openOC = function(e){ if (e) e.preventDefault(); oc.classList.add('is-open'); ov.classList.add('is-open'); document.documentElement.classList.add('pi-lock');
+        burgers.forEach(function(b){ b.setAttribute('aria-expanded','true'); }); var c = oc.querySelector('.pi-close a'); if (c) c.focus(); };
+      var closeOC = function(e){ if (e) e.preventDefault(); if (!oc.classList.contains('is-open')) return; oc.classList.remove('is-open'); ov.classList.remove('is-open'); document.documentElement.classList.remove('pi-lock');
+        burgers.forEach(function(b){ b.setAttribute('aria-expanded','false'); }); };
+      burgers.forEach(function(b){ b.setAttribute('aria-controls', oc.id); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-label','باز کردن منو'); b.addEventListener('click', openOC); });
+      oc.querySelectorAll('.pi-close a, .pi-close .elementor-icon').forEach(function(b){ b.setAttribute('aria-label','بستن منو'); b.addEventListener('click', closeOC); });
+      ov.addEventListener('click', closeOC);
+      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeOC(); });
+      oc.querySelectorAll('.pi-mnav a[href]').forEach(function(l){
+        l.addEventListener('click', function(){ var h = l.getAttribute('href'); if (h && h.charAt(0) !== '#' && !l.parentElement.classList.contains('menu-item-has-children')) closeOC(); });
+      });
+      window.addEventListener('resize', function(){ if (window.innerWidth > 1024) closeOC(); });
+    }
+  });
+})();
+</script>
