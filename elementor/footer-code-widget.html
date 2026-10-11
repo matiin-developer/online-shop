@@ -1,0 +1,145 @@
+<style>
+/* ===== فوتر بازرگانی پردیس – رنگ‌ها را از این‌جا تغییر دهید ===== */
+.pi-footer{--pi-page:#FFFFFF;--pi-red:#B11A3B;--pi-card:#3A434F;--pi-line:rgba(255,255,255,.08);--pi-r:28px;
+  --pi-hex:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0 32L0 82V66l28 16 28-16v16L28 98z' fill='none' stroke='%23ffffff' stroke-opacity='.045' stroke-width='1'/%3E%3C/svg%3E");}
+.pi-footer .pi-f-code{position:absolute!important;width:0!important;height:0!important;overflow:hidden;}
+.pi-footer *{box-sizing:border-box;}
+/* المنتور حداکثر عرض را برابر عرض دسکتاپ (مثلاً ۶۰٪) نگه می‌دارد؛ در تبلت و موبایل آزادش می‌کنیم */
+.pi-footer .e-con{max-width:100%!important;}
+
+/* --- کارت اصلی --- */
+.pi-footer .pi-f-card{position:relative;overflow:hidden;border-radius:var(--pi-r)!important;}
+.pi-footer .pi-f-top,.pi-footer .pi-f-bottom,.pi-footer .pi-f-copy,.pi-footer .pi-f-links,.pi-footer .pi-f-actions,.pi-footer .pi-f-brand-head,.pi-footer .pi-f-copy-end,.pi-footer .pi-f-cta{flex-direction:row!important;flex-wrap:nowrap!important;}
+.pi-footer .pi-f-card>.elementor-element,.pi-footer .pi-f-col>.elementor-element,.pi-footer .pi-f-brand>.elementor-element,.pi-footer .pi-f-contactcol>.elementor-element,.pi-footer .pi-f-btns>.elementor-element{width:100%!important;max-width:100%!important;flex:0 0 auto!important;}
+.pi-footer .pi-f-brand-head>.elementor-element,.pi-footer .pi-f-copy-end>.elementor-element{flex:0 0 auto!important;width:auto!important;margin:0!important;}
+
+/* --- گوشه بریده با قوس معکوس (دسکتاپ) --- */
+.pi-footer .pi-f-cta-wrap{position:relative;background:var(--pi-page);border-bottom-right-radius:var(--pi-r);}
+.pi-footer .pi-f-cta-wrap::before,.pi-footer .pi-f-cta-wrap::after{content:"";position:absolute;width:var(--pi-r);height:var(--pi-r);pointer-events:none;
+  background:radial-gradient(circle at 100% 100%,transparent calc(var(--pi-r) - .5px),var(--pi-page) var(--pi-r));}
+.pi-footer .pi-f-cta-wrap::before{top:0;right:calc(var(--pi-r) * -1);}
+.pi-footer .pi-f-cta-wrap::after{top:100%;left:0;}
+.pi-footer .pi-f-cta{height:100%;position:relative;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease;}
+.pi-footer .pi-f-cta:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(43,50,60,.12);}
+.pi-footer .pi-f-cta-text{flex:1 1 auto!important;min-width:0;}
+.pi-footer .pi-f-cta-art{flex:0 0 auto!important;width:auto!important;position:relative;}
+.pi-footer .pi-f-cta-art .elementor-icon{position:relative;z-index:1;box-shadow:0 14px 30px rgba(177,26,59,.35);}
+.pi-footer .pi-f-cta-art::before,.pi-footer .pi-f-cta-art::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px dashed rgba(177,26,59,.25);animation:piSpin 22s linear infinite;}
+.pi-footer .pi-f-cta-art::after{inset:-30px;border-style:solid;border-color:rgba(177,26,59,.08);animation:none;}
+@keyframes piSpin{to{transform:rotate(360deg)}}
+
+/* --- ستون‌های لینک --- */
+.pi-footer .pi-f-title .elementor-heading-title::after{content:"";display:block;width:26px;height:2px;margin-top:10px;border-radius:2px;background:var(--pi-red);transition:width .3s ease;}
+.pi-footer .pi-f-col:hover .pi-f-title .elementor-heading-title::after{width:44px;}
+.pi-footer .pi-f-list .elementor-icon-list-item a,.pi-footer .pi-f-list .elementor-icon-list-item>span{transition:transform .25s ease,color .25s ease;}
+.pi-footer .pi-f-list .elementor-icon-list-item:hover a{transform:translateX(-5px);}
+.pi-footer .pi-f-contact .elementor-icon-list-icon{width:34px;height:34px;flex:0 0 34px;display:inline-flex!important;align-items:center;justify-content:center;border-radius:10px;background:rgba(255,255,255,.06);}
+
+/* --- بخش پایین با الگوی شش‌ضلعی --- */
+.pi-footer .pi-f-bottom{background-image:var(--pi-hex);background-size:56px 98px;border-top:1px solid var(--pi-line);}
+.pi-footer .pi-f-brand-head .pi-f-logo img{background:#fff;border-radius:16px;padding:6px;}
+.pi-footer .pi-f-badge p{display:inline-flex;align-items:center;gap:8px;margin:0;padding:8px 14px;border-radius:40px;background:rgba(255,255,255,.07);border:1px solid var(--pi-line);}
+.pi-footer .pi-f-badge-ic{display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;border-radius:50%;background:var(--pi-red);font-size:11px;}
+.pi-footer .pi-f-actions{align-items:stretch!important;}
+.pi-footer .pi-f-btns{flex:1 1 auto!important;min-width:0;}
+.pi-footer .pi-f-abtn .elementor-button{width:100%;justify-content:flex-start;transition:background-color .25s ease,transform .25s ease;}
+.pi-footer .pi-f-abtn .elementor-button-icon{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:9px;background:rgba(255,255,255,.08);}
+.pi-footer .pi-f-abtn .elementor-button:hover{transform:translateX(-4px);}
+.pi-footer .pi-f-tile{flex:0 0 118px!important;width:118px!important;transition:transform .3s ease,box-shadow .3s ease;}
+.pi-footer .pi-f-tile:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(177,26,59,.35);}
+.pi-footer .pi-f-tile .elementor-icon-box-title a::after{content:"";position:absolute;inset:0;}
+.pi-footer .pi-f-tile .elementor-icon{animation:piRing 2.8s ease-in-out infinite;}
+@keyframes piRing{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(-14deg)}88%{transform:rotate(12deg)}92%{transform:rotate(-8deg)}96%{transform:rotate(5deg)}}
+.pi-footer .pi-f-tile .elementor-icon-box-description{direction:ltr;white-space:nowrap;font-size:11.5px!important;}
+
+/* --- نوار کپی‌رایت --- */
+.pi-footer .pi-f-copy{position:relative;}
+.pi-footer .pi-f-copy::before{content:"";position:absolute;inset:0;background-image:var(--pi-hex);background-size:56px 98px;opacity:.9;pointer-events:none;}
+.pi-footer .pi-f-copy>*{position:relative;}
+.pi-footer .pi-f-copy p{margin:0;}
+.pi-totop{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:0;border-radius:50%;background:#fff;color:var(--pi-red,#B11A3B);cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.18);transition:transform .25s ease;}
+.pi-totop:hover{transform:translateY(-3px);}
+
+/* ================= ریسپانسیو ================= */
+@media (max-width:1024px){
+  .pi-footer{--pi-r:22px;}
+  .pi-footer .pi-f-top{flex-direction:column!important;}
+  .pi-footer .pi-f-cta-wrap{order:-1;width:100%!important;background:transparent;border-radius:0;padding:16px 16px 0!important;}
+  .pi-footer .pi-f-cta-wrap::before,.pi-footer .pi-f-cta-wrap::after{display:none;}
+  .pi-footer .pi-f-links,.pi-footer .pi-f-cta{width:100%!important;}
+  .pi-footer .pi-f-cta-text{width:auto!important;}
+  .pi-footer .pi-f-bottom{flex-wrap:wrap!important;}
+  .pi-footer .pi-f-brand{width:100%!important;}
+  .pi-footer .pi-f-contactcol,.pi-footer .pi-f-actions{width:calc(50% - 20px)!important;}
+  .pi-footer .pi-f-actions{flex-direction:column!important;}
+  .pi-footer .pi-f-tile{flex:0 0 auto!important;width:100%!important;padding:14px 18px!important;}
+  .pi-footer .pi-f-tile .elementor-icon-box-wrapper{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:14px;text-align:right;}
+  .pi-footer .pi-f-tile .elementor-icon-box-icon{margin:0!important;}
+  .pi-footer .pi-f-tile .elementor-icon-box-description{font-size:14px!important;}
+}
+@media (max-width:767px){
+  .pi-footer{--pi-r:20px;}
+  .pi-footer .pi-f-cta-wrap{padding:12px 12px 0!important;}
+  .pi-footer .pi-f-links{flex-direction:column!important;gap:0!important;}
+  .pi-footer .pi-f-col{width:100%!important;border-bottom:1px solid var(--pi-line);}
+  .pi-footer .pi-f-col:last-child{border-bottom:0;}
+  .pi-footer .pi-f-bottom{flex-direction:column!important;gap:28px!important;}
+  .pi-footer .pi-f-contactcol,.pi-footer .pi-f-actions{width:100%!important;}
+  .pi-footer .pi-f-copy{flex-direction:column-reverse!important;text-align:center;}
+  .pi-footer .pi-f-copy-end{justify-content:center!important;}
+  /* آکاردئون ستون‌های لینک (فقط وقتی اسکریپت فعال است) */
+  .pi-footer.pi-js .pi-f-col .pi-f-title{margin:0!important;cursor:pointer;}
+  .pi-footer.pi-js .pi-f-col .pi-f-title .elementor-heading-title{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .pi-footer.pi-js .pi-f-col .pi-f-title .elementor-heading-title::after{width:9px!important;height:9px;margin:0 0 4px 4px;background:none;border:solid #fff;border-width:0 0 2px 2px;border-radius:0;transform:rotate(-45deg);transition:transform .3s ease;}
+  .pi-footer.pi-js .pi-f-col.is-open .pi-f-title .elementor-heading-title::after{transform:rotate(135deg);margin-bottom:-4px;}
+  .pi-footer.pi-js .pi-f-col .pi-f-list{display:grid!important;grid-template-rows:0fr;transition:grid-template-rows .35s ease;}
+  .pi-footer.pi-js .pi-f-col .pi-f-list>.elementor-widget-container{min-height:0;overflow:hidden;}
+  .pi-footer.pi-js .pi-f-col.is-open .pi-f-list{grid-template-rows:1fr;}
+  .pi-footer.pi-js .pi-f-col.is-open .pi-f-list>.elementor-widget-container{padding-bottom:18px;}
+}
+@media (prefers-reduced-motion:reduce){.pi-footer *,.pi-footer *::before,.pi-footer *::after{animation:none!important;transition:none!important;}}
+.elementor-editor-active .pi-footer .pi-f-code{position:relative!important;width:auto!important;height:auto!important;}
+</style>
+
+<script>
+(function(){
+  function ready(fn){ document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
+  function key(t){ return (t || '').replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[‌\s]+/g,'').trim(); }
+  ready(function(){
+    var f = document.querySelector('.pi-footer'); if (!f) return;
+    if (document.body.classList.contains('elementor-editor-active')) return;
+    f.classList.add('pi-js');
+
+    /* لینک‌ها خودکار از منوی هدر (فهرست وردپرس) خوانده می‌شوند؛ کافی است متن آیتم‌ها یکی باشد */
+    var map = {};
+    document.querySelectorAll('.pi-header .pi-nav a[href], .pi-mnav a[href], .elementor-nav-menu a[href]').forEach(function(a){
+      var c = a.cloneNode(true); c.querySelectorAll('.pi-badge,.sub-arrow,i,svg').forEach(function(x){ x.remove(); }); var h = a.getAttribute('href'), k = key(c.textContent);
+      if (h && h.charAt(0) !== '#' && k && !map[k]) map[k] = h;
+    });
+    f.querySelectorAll('.pi-f-list a').forEach(function(a){ var t = a.querySelector('.elementor-icon-list-text') || a; var h = map[key(t.textContent)]; if (h) a.setAttribute('href', h); });
+    f.querySelectorAll('[data-pi-sync]').forEach(function(a){ var h = map[key(a.getAttribute('data-pi-sync'))]; if (h) a.setAttribute('href', h); });
+
+    /* سال شمسی خودکار */
+    try { var y = new Intl.DateTimeFormat('fa-IR-u-ca-persian', {year:'numeric'}).format(new Date()).replace(/[^۰-۹0-9]/g, '');
+      if (y) f.querySelectorAll('.pi-year').forEach(function(s){ s.textContent = y; }); } catch (e) {}
+
+    /* بازگشت به بالا */
+    f.querySelectorAll('.pi-totop').forEach(function(b){ b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); }); });
+
+    /* آکاردئون ستون‌ها در موبایل */
+    var mq = window.matchMedia('(max-width:767px)');
+    f.querySelectorAll('.pi-f-col').forEach(function(c, i){
+      var t = c.querySelector('.pi-f-title'), l = c.querySelector('.pi-f-list'); if (!t || !l) return;
+      var id = 'pi-f-list-' + i; l.id = id;
+      t.setAttribute('role', 'button'); t.setAttribute('aria-controls', id);
+      function sync(){ var open = !mq.matches || c.classList.contains('is-open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false'); t.tabIndex = mq.matches ? 0 : -1;
+        l.toggleAttribute('inert', !open); }
+      function toggle(){ if (!mq.matches) return; c.classList.toggle('is-open'); sync(); }
+      t.addEventListener('click', toggle);
+      t.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+      (mq.addEventListener ? mq.addEventListener('change', sync) : mq.addListener(sync)); sync();
+    });
+  });
+})();
+</script>

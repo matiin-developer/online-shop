@@ -1,0 +1,1967 @@
+{
+  "content": [
+    {
+      "id": "c4bc6da",
+      "elType": "container",
+      "settings": {
+        "_title": "فوتر بازرگانی پردیس",
+        "css_classes": "pi-footer",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1240,
+          "sizes": []
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "column": "0",
+          "row": "0"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "30",
+          "left": "20",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "24",
+          "left": "20",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "28",
+          "right": "12",
+          "bottom": "16",
+          "left": "12",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "77db2f8",
+          "elType": "container",
+          "settings": {
+            "_title": "کارت فوتر",
+            "css_classes": "pi-f-card",
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "column": "0",
+              "row": "0"
+            },
+            "background_background": "classic",
+            "background_color": "#3A434F",
+            "border_radius": {
+              "unit": "px",
+              "top": "28",
+              "right": "28",
+              "bottom": "28",
+              "left": "28",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "115bfd0",
+              "elType": "container",
+              "settings": {
+                "_title": "بخش بالا",
+                "css_classes": "pi-f-top",
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_align_items": "stretch",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 0,
+                  "column": "0",
+                  "row": "0"
+                },
+                "flex_wrap": "nowrap",
+                "flex_wrap_tablet": "nowrap",
+                "flex_wrap_mobile": "nowrap"
+              },
+              "elements": [
+                {
+                  "id": "589d750",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "ستون‌های لینک",
+                    "css_classes": "pi-f-links",
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_align_items": "stretch",
+                    "padding": {
+                      "unit": "px",
+                      "top": "44",
+                      "right": "48",
+                      "bottom": "36",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 24,
+                      "column": "24",
+                      "row": "24"
+                    },
+                    "flex_wrap": "nowrap",
+                    "flex_wrap_tablet": "nowrap",
+                    "flex_wrap_mobile": "nowrap",
+                    "width": {
+                      "unit": "%",
+                      "size": 60,
+                      "sizes": []
+                    },
+                    "padding_tablet": {
+                      "unit": "px",
+                      "top": "36",
+                      "right": "32",
+                      "bottom": "28",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "28",
+                      "right": "22",
+                      "bottom": "8",
+                      "left": "22",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "42d3dd8",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "ستون: دسترسی سریع",
+                        "css_classes": "pi-f-col",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "padding": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 0,
+                          "column": "0",
+                          "row": "0"
+                        },
+                        "width": {
+                          "unit": "%",
+                          "size": 30,
+                          "sizes": []
+                        },
+                        "width_mobile": {
+                          "unit": "%",
+                          "size": 100,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "041b75a",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "عنوان: دسترسی سریع",
+                            "_css_classes": "pi-f-title",
+                            "title": "دسترسی سریع",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 16,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "700",
+                            "_margin": {
+                              "unit": "px",
+                              "top": "0",
+                              "right": "0",
+                              "bottom": "18",
+                              "left": "0",
+                              "isLinked": false
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        },
+                        {
+                          "id": "2a65d01",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "_title": "لینک‌ها: دسترسی سریع",
+                            "_css_classes": "pi-f-list",
+                            "icon_list": [
+                              {
+                                "_id": "d2e3030",
+                                "text": "صفحه اصلی",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "/",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "c9ffd1d",
+                                "text": "پروژه ها",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "cf5cddd",
+                                "text": "مقالات",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "d1d1ef5",
+                                "text": "درباره ما",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "e82307e",
+                                "text": "تماس با ما",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "/contact/",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              }
+                            ],
+                            "space_between": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_size": {
+                              "unit": "px",
+                              "size": 5,
+                              "sizes": []
+                            },
+                            "icon_color": "#B11A3B",
+                            "icon_color_hover": "#FFFFFF",
+                            "text_indent": {
+                              "unit": "px",
+                              "size": 10,
+                              "sizes": []
+                            },
+                            "text_color": "#C3C9D2",
+                            "text_color_hover": "#FFFFFF",
+                            "icon_typography_typography": "custom",
+                            "icon_typography_font_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_typography_font_weight": "400"
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    },
+                    {
+                      "id": "53e74f7",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "ستون: خدمات ما",
+                        "css_classes": "pi-f-col",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "padding": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 0,
+                          "column": "0",
+                          "row": "0"
+                        },
+                        "width": {
+                          "unit": "%",
+                          "size": 38,
+                          "sizes": []
+                        },
+                        "width_mobile": {
+                          "unit": "%",
+                          "size": 100,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "96c707f",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "عنوان: خدمات ما",
+                            "_css_classes": "pi-f-title",
+                            "title": "خدمات ما",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 16,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "700",
+                            "_margin": {
+                              "unit": "px",
+                              "top": "0",
+                              "right": "0",
+                              "bottom": "18",
+                              "left": "0",
+                              "isLinked": false
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        },
+                        {
+                          "id": "198df57",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "_title": "لینک‌ها: خدمات ما",
+                            "_css_classes": "pi-f-list",
+                            "icon_list": [
+                              {
+                                "_id": "2013de4",
+                                "text": "واردات از چین",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "2689aef",
+                                "text": "واردات ته لنجی",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "6c512d7",
+                                "text": "خرید کالا از چین",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "007ce70",
+                                "text": "حواله یوان چین",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "c08bcd2",
+                                "text": "حمل و نقل از چین",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "ec5aa8e",
+                                "text": "محاسبه هزینه واردات از چین",
+                                "selected_icon": {
+                                  "value": "fas fa-circle",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "#",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              }
+                            ],
+                            "space_between": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_size": {
+                              "unit": "px",
+                              "size": 5,
+                              "sizes": []
+                            },
+                            "icon_color": "#B11A3B",
+                            "icon_color_hover": "#FFFFFF",
+                            "text_indent": {
+                              "unit": "px",
+                              "size": 10,
+                              "sizes": []
+                            },
+                            "text_color": "#C3C9D2",
+                            "text_color_hover": "#FFFFFF",
+                            "icon_typography_typography": "custom",
+                            "icon_typography_font_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_typography_font_weight": "400"
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    },
+                    {
+                      "id": "99697e5",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "ستون: ارتباط سریع",
+                        "css_classes": "pi-f-col",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "padding": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 0,
+                          "column": "0",
+                          "row": "0"
+                        },
+                        "width": {
+                          "unit": "%",
+                          "size": 32,
+                          "sizes": []
+                        },
+                        "width_mobile": {
+                          "unit": "%",
+                          "size": 100,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "e8e3e25",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "عنوان: ارتباط سریع",
+                            "_css_classes": "pi-f-title",
+                            "title": "ارتباط سریع",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 16,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "700",
+                            "_margin": {
+                              "unit": "px",
+                              "top": "0",
+                              "right": "0",
+                              "bottom": "18",
+                              "left": "0",
+                              "isLinked": false
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        },
+                        {
+                          "id": "011b763",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "_title": "لینک‌ها: ارتباط سریع",
+                            "_css_classes": "pi-f-list",
+                            "icon_list": [
+                              {
+                                "_id": "c049034",
+                                "text": "تماس تلفنی",
+                                "selected_icon": {
+                                  "value": "fas fa-phone-alt",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "tel:+989133399692",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "ab186f0",
+                                "text": "مشاوره در واتساپ",
+                                "selected_icon": {
+                                  "value": "fab fa-whatsapp",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "https://wa.me/989133399692",
+                                  "is_external": "on",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "98afdae",
+                                "text": "کانال تلگرام",
+                                "selected_icon": {
+                                  "value": "fab fa-telegram-plane",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "https://t.me/",
+                                  "is_external": "on",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              },
+                              {
+                                "_id": "59284b8",
+                                "text": "اینستاگرام",
+                                "selected_icon": {
+                                  "value": "fab fa-instagram",
+                                  "library": "fa-solid"
+                                },
+                                "link": {
+                                  "url": "https://instagram.com/",
+                                  "is_external": "on",
+                                  "nofollow": "",
+                                  "custom_attributes": ""
+                                }
+                              }
+                            ],
+                            "space_between": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_color": "#FF6B86",
+                            "icon_color_hover": "#FFFFFF",
+                            "text_indent": {
+                              "unit": "px",
+                              "size": 10,
+                              "sizes": []
+                            },
+                            "text_color": "#C3C9D2",
+                            "text_color_hover": "#FFFFFF",
+                            "icon_typography_typography": "custom",
+                            "icon_typography_font_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_typography_font_weight": "400"
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "8fb631b",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "قاب کارت مشاوره (گوشه بریده)",
+                    "css_classes": "pi-f-cta-wrap",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "18",
+                      "bottom": "18",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 0,
+                      "column": "0",
+                      "row": "0"
+                    },
+                    "width": {
+                      "unit": "%",
+                      "size": 40,
+                      "sizes": []
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "5339a2b",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "کارت مشاوره",
+                        "css_classes": "pi-f-cta",
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_align_items": "center",
+                        "padding": {
+                          "unit": "px",
+                          "top": "30",
+                          "right": "32",
+                          "bottom": "30",
+                          "left": "28",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 18,
+                          "column": "18",
+                          "row": "18"
+                        },
+                        "flex_wrap": "nowrap",
+                        "flex_wrap_tablet": "nowrap",
+                        "flex_wrap_mobile": "nowrap",
+                        "padding_mobile": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "22",
+                          "bottom": "24",
+                          "left": "22",
+                          "isLinked": false
+                        },
+                        "background_background": "classic",
+                        "background_color": "#F3F4F6",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "22",
+                          "right": "22",
+                          "bottom": "22",
+                          "left": "22",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "6c1b061",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "متن کارت",
+                            "css_classes": "pi-f-cta-text",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "padding": {
+                              "unit": "px",
+                              "top": "0",
+                              "right": "0",
+                              "bottom": "0",
+                              "left": "0",
+                              "isLinked": false
+                            },
+                            "flex_gap": {
+                              "unit": "px",
+                              "size": 0,
+                              "column": "0",
+                              "row": "0"
+                            },
+                            "flex_justify_content": "center",
+                            "width": {
+                              "unit": "%",
+                              "size": 100,
+                              "sizes": []
+                            }
+                          },
+                          "elements": [
+                            {
+                              "id": "5099391",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "برچسب",
+                                "title": "مشاوره رایگان",
+                                "header_size": "div",
+                                "title_color": "#B11A3B",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 12.5,
+                                  "sizes": []
+                                },
+                                "typography_font_weight": "700",
+                                "_margin": {
+                                  "unit": "px",
+                                  "top": "0",
+                                  "right": "0",
+                                  "bottom": "8",
+                                  "left": "0",
+                                  "isLinked": false
+                                }
+                              },
+                              "elements": [],
+                              "isInner": false
+                            },
+                            {
+                              "id": "a0f275f",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "تیتر کارت",
+                                "title": "واردات از چین را<br>مطمئن شروع کنید",
+                                "header_size": "div",
+                                "title_color": "#3E4753",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 21,
+                                  "sizes": []
+                                },
+                                "typography_font_weight": "800",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.5,
+                                  "sizes": []
+                                },
+                                "_margin": {
+                                  "unit": "px",
+                                  "top": "0",
+                                  "right": "0",
+                                  "bottom": "10",
+                                  "left": "0",
+                                  "isLinked": false
+                                }
+                              },
+                              "elements": [],
+                              "isInner": false
+                            },
+                            {
+                              "id": "8067f70",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "توضیح کارت",
+                                "editor": "<p>قبل از خرید، قیمت تمام‌شده و بهترین مسیر واردات را با کارشناسان ما بررسی کنید.</p>",
+                                "text_color": "#7A8491",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 13,
+                                  "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "typography_line_height": {
+                                  "unit": "em",
+                                  "size": 1.9,
+                                  "sizes": []
+                                },
+                                "_margin": {
+                                  "unit": "px",
+                                  "top": "0",
+                                  "right": "0",
+                                  "bottom": "16",
+                                  "left": "0",
+                                  "isLinked": false
+                                }
+                              },
+                              "elements": [],
+                              "isInner": false
+                            },
+                            {
+                              "id": "f8b069d",
+                              "elType": "widget",
+                              "widgetType": "button",
+                              "settings": {
+                                "_title": "دکمه کارت",
+                                "_css_classes": "pi-f-cta-btn",
+                                "text": "ثبت درخواست مشاوره",
+                                "link": {
+                                  "url": "/contact/",
+                                  "is_external": "",
+                                  "nofollow": "",
+                                  "custom_attributes": "data-pi-sync|تماس با ما"
+                                },
+                                "selected_icon": {
+                                  "value": "fas fa-arrow-left",
+                                  "library": "fa-solid"
+                                },
+                                "icon_align": "left",
+                                "icon_indent": {
+                                  "unit": "px",
+                                  "size": 8,
+                                  "sizes": []
+                                },
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                  "unit": "px",
+                                  "size": 13.5,
+                                  "sizes": []
+                                },
+                                "typography_font_weight": "700",
+                                "button_text_color": "#FFFFFF",
+                                "hover_color": "#FFFFFF",
+                                "background_background": "gradient",
+                                "background_color": "#B11A3B",
+                                "background_color_b": "#7E1029",
+                                "background_gradient_angle": {
+                                  "unit": "deg",
+                                  "size": 135,
+                                  "sizes": []
+                                },
+                                "button_background_hover_background": "classic",
+                                "button_background_hover_color": "#3E4753",
+                                "border_radius": {
+                                  "unit": "px",
+                                  "top": "50",
+                                  "right": "50",
+                                  "bottom": "50",
+                                  "left": "50",
+                                  "isLinked": false
+                                },
+                                "text_padding": {
+                                  "unit": "px",
+                                  "top": "13",
+                                  "right": "22",
+                                  "bottom": "13",
+                                  "left": "22",
+                                  "isLinked": false
+                                },
+                                "align": "right"
+                              },
+                              "elements": [],
+                              "isInner": false
+                            }
+                          ],
+                          "isInner": true
+                        },
+                        {
+                          "id": "3ec0f08",
+                          "elType": "widget",
+                          "widgetType": "icon",
+                          "settings": {
+                            "_title": "آیکن کارت",
+                            "_css_classes": "pi-f-cta-art",
+                            "selected_icon": {
+                              "value": "fas fa-ship",
+                              "library": "fa-solid"
+                            },
+                            "view": "stacked",
+                            "shape": "circle",
+                            "primary_color": "#B11A3B",
+                            "secondary_color": "#FFFFFF",
+                            "size": {
+                              "unit": "px",
+                              "size": 34,
+                              "sizes": []
+                            },
+                            "icon_padding": {
+                              "unit": "px",
+                              "size": 26,
+                              "sizes": []
+                            },
+                            "hide_mobile": "hidden-mobile"
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "52fe9c7",
+              "elType": "container",
+              "settings": {
+                "_title": "بخش پایین",
+                "css_classes": "pi-f-bottom",
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_align_items": "stretch",
+                "padding": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "48",
+                  "bottom": "44",
+                  "left": "48",
+                  "isLinked": false
+                },
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 40,
+                  "column": "40",
+                  "row": "40"
+                },
+                "flex_wrap": "nowrap",
+                "flex_wrap_tablet": "nowrap",
+                "flex_wrap_mobile": "nowrap",
+                "padding_tablet": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "36",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "22",
+                  "bottom": "30",
+                  "left": "22",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "ea55ac7",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "ستون برند",
+                    "css_classes": "pi-f-brand",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 0,
+                      "column": "0",
+                      "row": "0"
+                    },
+                    "width": {
+                      "unit": "%",
+                      "size": 36,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "9068b0b",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "لوگو و نام",
+                        "css_classes": "pi-f-brand-head",
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_align_items": "center",
+                        "padding": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 14,
+                          "column": "14",
+                          "row": "14"
+                        },
+                        "flex_wrap": "nowrap",
+                        "flex_wrap_tablet": "nowrap",
+                        "flex_wrap_mobile": "nowrap",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "16",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "e1f5d51",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "settings": {
+                            "_title": "لوگو",
+                            "image": {
+                              "url": "https://pardisimport.com/wp-content/uploads/logo.png",
+                              "id": "",
+                              "alt": "بازرگانی پردیس"
+                            },
+                            "width": {
+                              "unit": "px",
+                              "size": 64,
+                              "sizes": []
+                            },
+                            "link_to": "custom",
+                            "link": {
+                              "url": "/",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            },
+                            "_css_classes": "pi-f-logo"
+                          },
+                          "elements": [],
+                          "isInner": false
+                        },
+                        {
+                          "id": "534c2de",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "_title": "نام برند",
+                            "title": "بازرگانی پردیس<br><span style=\"font-size:.62em;font-weight:500;color:#C3C9D2\">واردات مستقیم از چین</span>",
+                            "header_size": "div",
+                            "title_color": "#FFFFFF",
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 20,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "800",
+                            "typography_line_height": {
+                              "unit": "em",
+                              "size": 1.45,
+                              "sizes": []
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    },
+                    {
+                      "id": "a34a334",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "درباره ما",
+                        "editor": "<p>تیم ما با چند سال تجربه در واردات و حمل‌ونقل بین‌المللی، با دفتر و انبار اختصاصی در چین و ایران، امنیت، سرعت و شفافیت در تحویل کالا را تضمین می‌کند.</p>",
+                        "text_color": "#C3C9D2",
+                        "align": "justify",
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 2,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "16",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "495e3af",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "نشان اعتبار",
+                        "_css_classes": "pi-f-badge",
+                        "editor": "<p><span class=\"pi-f-badge-ic\">✓</span> عضو رسمی اتاق بازرگانی، صنایع، معادن و کشاورزی ایران</p>",
+                        "text_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "1c46313",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "ستون تماس",
+                    "css_classes": "pi-f-contactcol",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 0,
+                      "column": "0",
+                      "row": "0"
+                    },
+                    "width": {
+                      "unit": "%",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "07e34cb",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "عنوان: کجا هستیم؟",
+                        "_css_classes": "pi-f-title",
+                        "title": "کجا هستیم؟",
+                        "header_size": "div",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "700",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "18",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "2279b4c",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "settings": {
+                        "_title": "اطلاعات تماس",
+                        "_css_classes": "pi-f-contact",
+                        "icon_list": [
+                          {
+                            "_id": "e4bb292",
+                            "text": "آدرس دفتر مرکزی را وارد کنید",
+                            "selected_icon": {
+                              "value": "fas fa-map-marker-alt",
+                              "library": "fa-solid"
+                            },
+                            "link": {
+                              "url": "",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          },
+                          {
+                            "_id": "2aefc0e",
+                            "text": "۰۹۱۳-۳۳۹-۹۶۹۲",
+                            "selected_icon": {
+                              "value": "fas fa-phone-alt",
+                              "library": "fa-solid"
+                            },
+                            "link": {
+                              "url": "tel:+989133399692",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          },
+                          {
+                            "_id": "74e7026",
+                            "text": "info@pardisimport.com",
+                            "selected_icon": {
+                              "value": "far fa-envelope",
+                              "library": "fa-regular"
+                            },
+                            "link": {
+                              "url": "mailto:info@pardisimport.com",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          },
+                          {
+                            "_id": "5972352",
+                            "text": "شنبه تا پنجشنبه، ۹ تا ۱۸",
+                            "selected_icon": {
+                              "value": "far fa-clock",
+                              "library": "fa-regular"
+                            },
+                            "link": {
+                              "url": "",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          }
+                        ],
+                        "space_between": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 14,
+                          "sizes": []
+                        },
+                        "icon_color": "#FF6B86",
+                        "text_indent": {
+                          "unit": "px",
+                          "size": 12,
+                          "sizes": []
+                        },
+                        "text_color": "#C3C9D2",
+                        "text_color_hover": "#FFFFFF",
+                        "icon_typography_typography": "custom",
+                        "icon_typography_font_size": {
+                          "unit": "px",
+                          "size": 14,
+                          "sizes": []
+                        },
+                        "icon_typography_font_weight": "400",
+                        "icon_typography_line_height": {
+                          "unit": "em",
+                          "size": 1.7,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "3a3eca1",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "ستون اکشن‌ها",
+                    "css_classes": "pi-f-actions",
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_align_items": "stretch",
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 12,
+                      "column": "12",
+                      "row": "12"
+                    },
+                    "flex_wrap": "nowrap",
+                    "flex_wrap_tablet": "nowrap",
+                    "flex_wrap_mobile": "nowrap",
+                    "width": {
+                      "unit": "%",
+                      "size": 34,
+                      "sizes": []
+                    },
+                    "width_tablet": {
+                      "unit": "%",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "ee71e55",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "دکمه‌های سریع",
+                        "css_classes": "pi-f-btns",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "padding": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10,
+                          "column": "10",
+                          "row": "10"
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "eaa3bff",
+                          "elType": "widget",
+                          "widgetType": "button",
+                          "settings": {
+                            "_title": "دکمه: ثبت درخواست واردات",
+                            "_css_classes": "pi-f-abtn",
+                            "text": "ثبت درخواست واردات",
+                            "link": {
+                              "url": "/contact/",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": "data-pi-sync|تماس با ما"
+                            },
+                            "selected_icon": {
+                              "value": "fas fa-file-signature",
+                              "library": "fa-solid"
+                            },
+                            "icon_align": "right",
+                            "icon_indent": {
+                              "unit": "px",
+                              "size": 10,
+                              "sizes": []
+                            },
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "700",
+                            "align": "justify",
+                            "button_text_color": "#FFFFFF",
+                            "hover_color": "#FFFFFF",
+                            "background_background": "classic",
+                            "background_color": "#2F3640",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#B11A3B",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "14",
+                              "right": "14",
+                              "bottom": "14",
+                              "left": "14",
+                              "isLinked": false
+                            },
+                            "text_padding": {
+                              "unit": "px",
+                              "top": "16",
+                              "right": "18",
+                              "bottom": "16",
+                              "left": "18",
+                              "isLinked": false
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        },
+                        {
+                          "id": "e1b6d3f",
+                          "elType": "widget",
+                          "widgetType": "button",
+                          "settings": {
+                            "_title": "دکمه: محاسبه هزینه واردات",
+                            "_css_classes": "pi-f-abtn",
+                            "text": "محاسبه هزینه واردات",
+                            "link": {
+                              "url": "#",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": "data-pi-sync|محاسبه هزینه واردات از چین"
+                            },
+                            "selected_icon": {
+                              "value": "fas fa-calculator",
+                              "library": "fa-solid"
+                            },
+                            "icon_align": "right",
+                            "icon_indent": {
+                              "unit": "px",
+                              "size": 10,
+                              "sizes": []
+                            },
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "700",
+                            "align": "justify",
+                            "button_text_color": "#FFFFFF",
+                            "hover_color": "#FFFFFF",
+                            "background_background": "classic",
+                            "background_color": "#2F3640",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#B11A3B",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "14",
+                              "right": "14",
+                              "bottom": "14",
+                              "left": "14",
+                              "isLinked": false
+                            },
+                            "text_padding": {
+                              "unit": "px",
+                              "top": "16",
+                              "right": "18",
+                              "bottom": "16",
+                              "left": "18",
+                              "isLinked": false
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        },
+                        {
+                          "id": "b416421",
+                          "elType": "widget",
+                          "widgetType": "button",
+                          "settings": {
+                            "_title": "دکمه: مشاوره در واتساپ",
+                            "_css_classes": "pi-f-abtn",
+                            "text": "مشاوره در واتساپ",
+                            "link": {
+                              "url": "https://wa.me/989133399692",
+                              "is_external": "on",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            },
+                            "selected_icon": {
+                              "value": "fab fa-whatsapp",
+                              "library": "fa-brands"
+                            },
+                            "icon_align": "right",
+                            "icon_indent": {
+                              "unit": "px",
+                              "size": 10,
+                              "sizes": []
+                            },
+                            "typography_typography": "custom",
+                            "typography_font_size": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "typography_font_weight": "700",
+                            "align": "justify",
+                            "button_text_color": "#FFFFFF",
+                            "hover_color": "#FFFFFF",
+                            "background_background": "classic",
+                            "background_color": "#2F3640",
+                            "button_background_hover_background": "classic",
+                            "button_background_hover_color": "#B11A3B",
+                            "border_radius": {
+                              "unit": "px",
+                              "top": "14",
+                              "right": "14",
+                              "bottom": "14",
+                              "left": "14",
+                              "isLinked": false
+                            },
+                            "text_padding": {
+                              "unit": "px",
+                              "top": "16",
+                              "right": "18",
+                              "bottom": "16",
+                              "left": "18",
+                              "isLinked": false
+                            }
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    },
+                    {
+                      "id": "bd7da16",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "کاشی تماس فوری",
+                        "css_classes": "pi-f-tile",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "padding": {
+                          "unit": "px",
+                          "top": "18",
+                          "right": "10",
+                          "bottom": "18",
+                          "left": "10",
+                          "isLinked": false
+                        },
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 0,
+                          "column": "0",
+                          "row": "0"
+                        },
+                        "flex_justify_content": "center",
+                        "background_background": "gradient",
+                        "background_color": "#B11A3B",
+                        "background_color_b": "#7E1029",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 160,
+                          "sizes": []
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "18",
+                          "right": "18",
+                          "bottom": "18",
+                          "left": "18",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "bf3e750",
+                          "elType": "widget",
+                          "widgetType": "icon-box",
+                          "settings": {
+                            "_title": "تماس فوری",
+                            "selected_icon": {
+                              "value": "fas fa-phone-alt",
+                              "library": "fa-solid"
+                            },
+                            "view": "stacked",
+                            "shape": "circle",
+                            "position": "top",
+                            "title_text": "تماس فوری",
+                            "description_text": "۰۹۱۳-۳۳۹-۹۶۹۲",
+                            "link": {
+                              "url": "tel:+989133399692",
+                              "is_external": "",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            },
+                            "title_size": "div",
+                            "primary_color": "#FFFFFF",
+                            "secondary_color": "#B11A3B",
+                            "icon_size": {
+                              "unit": "px",
+                              "size": 18,
+                              "sizes": []
+                            },
+                            "icon_padding": {
+                              "unit": "px",
+                              "size": 14,
+                              "sizes": []
+                            },
+                            "icon_space": {
+                              "unit": "px",
+                              "size": 12,
+                              "sizes": []
+                            },
+                            "text_align": "center",
+                            "title_color": "#FFFFFF",
+                            "title_typography_typography": "custom",
+                            "title_typography_font_size": {
+                              "unit": "px",
+                              "size": 15,
+                              "sizes": []
+                            },
+                            "title_typography_font_weight": "800",
+                            "description_color": "rgba(255,255,255,0.85)",
+                            "description_typography_typography": "custom",
+                            "description_typography_font_size": {
+                              "unit": "px",
+                              "size": 12,
+                              "sizes": []
+                            },
+                            "description_typography_font_weight": "500"
+                          },
+                          "elements": [],
+                          "isInner": false
+                        }
+                      ],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "6e69abe",
+              "elType": "container",
+              "settings": {
+                "_title": "نوار کپی‌رایت",
+                "css_classes": "pi-f-copy",
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_align_items": "center",
+                "padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "48",
+                  "bottom": "16",
+                  "left": "48",
+                  "isLinked": false
+                },
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 16,
+                  "column": "16",
+                  "row": "16"
+                },
+                "flex_wrap": "nowrap",
+                "flex_wrap_tablet": "nowrap",
+                "flex_wrap_mobile": "nowrap",
+                "flex_justify_content": "space-between",
+                "padding_tablet": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "32",
+                  "bottom": "16",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "22",
+                  "bottom": "18",
+                  "left": "22",
+                  "isLinked": false
+                },
+                "background_background": "gradient",
+                "background_color": "#B11A3B",
+                "background_color_b": "#7E1029",
+                "background_gradient_angle": {
+                  "unit": "deg",
+                  "size": 90,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "bc08100",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "_title": "متن کپی‌رایت",
+                    "editor": "<p>© <span class=\"pi-year\">۱۴۰۵</span> تمامی حقوق این وب‌سایت متعلق به بازرگانی پردیس است.</p>",
+                    "text_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 13,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "500"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "2abb1ce",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "شبکه‌ها و بازگشت به بالا",
+                    "css_classes": "pi-f-copy-end",
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_align_items": "center",
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 14,
+                      "column": "14",
+                      "row": "14"
+                    },
+                    "flex_wrap": "nowrap",
+                    "flex_wrap_tablet": "nowrap",
+                    "flex_wrap_mobile": "nowrap",
+                    "flex_justify_content": "flex-end"
+                  },
+                  "elements": [
+                    {
+                      "id": "2c3d6f9",
+                      "elType": "widget",
+                      "widgetType": "social-icons",
+                      "settings": {
+                        "_title": "شبکه‌های اجتماعی",
+                        "social_icon_list": [
+                          {
+                            "_id": "744eeec",
+                            "social_icon": {
+                              "value": "fab fa-instagram",
+                              "library": "fa-brands"
+                            },
+                            "link": {
+                              "url": "https://instagram.com/",
+                              "is_external": "on",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          },
+                          {
+                            "_id": "313f6f1",
+                            "social_icon": {
+                              "value": "fab fa-whatsapp",
+                              "library": "fa-brands"
+                            },
+                            "link": {
+                              "url": "https://wa.me/989133399692",
+                              "is_external": "on",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          },
+                          {
+                            "_id": "cbfbc8e",
+                            "social_icon": {
+                              "value": "fab fa-telegram-plane",
+                              "library": "fa-brands"
+                            },
+                            "link": {
+                              "url": "https://t.me/",
+                              "is_external": "on",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          },
+                          {
+                            "_id": "f86bb5b",
+                            "social_icon": {
+                              "value": "fab fa-linkedin-in",
+                              "library": "fa-brands"
+                            },
+                            "link": {
+                              "url": "https://linkedin.com/",
+                              "is_external": "on",
+                              "nofollow": "",
+                              "custom_attributes": ""
+                            }
+                          }
+                        ],
+                        "shape": "circle",
+                        "icon_color": "custom",
+                        "icon_primary_color": "rgba(255,255,255,0.12)",
+                        "icon_secondary_color": "#FFFFFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13,
+                          "sizes": []
+                        },
+                        "icon_padding": {
+                          "unit": "em",
+                          "size": 0.7,
+                          "sizes": []
+                        },
+                        "icon_spacing": {
+                          "unit": "px",
+                          "size": 6,
+                          "sizes": []
+                        },
+                        "hover_primary_color": "#FFFFFF",
+                        "hover_secondary_color": "#B11A3B"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "769ec9f",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "دکمه بازگشت به بالا",
+                        "html": "<button type=\"button\" class=\"pi-totop\" aria-label=\"بازگشت به بالای صفحه\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 19V5M5 12l7-7 7 7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "82c089a",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "استایل و اسکریپت فوتر (CSS/JS)",
+            "_css_classes": "pi-f-code",
+            "html": "<style>\n/* ===== فوتر بازرگانی پردیس – رنگ‌ها را از این‌جا تغییر دهید ===== */\n.pi-footer{--pi-page:#FFFFFF;--pi-red:#B11A3B;--pi-card:#3A434F;--pi-line:rgba(255,255,255,.08);--pi-r:28px;\n  --pi-hex:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0 32L0 82V66l28 16 28-16v16L28 98z' fill='none' stroke='%23ffffff' stroke-opacity='.045' stroke-width='1'/%3E%3C/svg%3E\");}\n.pi-footer .pi-f-code{position:absolute!important;width:0!important;height:0!important;overflow:hidden;}\n.pi-footer *{box-sizing:border-box;}\n/* المنتور حداکثر عرض را برابر عرض دسکتاپ (مثلاً ۶۰٪) نگه می‌دارد؛ در تبلت و موبایل آزادش می‌کنیم */\n.pi-footer .e-con{max-width:100%!important;}\n\n/* --- کارت اصلی --- */\n.pi-footer .pi-f-card{position:relative;overflow:hidden;border-radius:var(--pi-r)!important;}\n.pi-footer .pi-f-top,.pi-footer .pi-f-bottom,.pi-footer .pi-f-copy,.pi-footer .pi-f-links,.pi-footer .pi-f-actions,.pi-footer .pi-f-brand-head,.pi-footer .pi-f-copy-end,.pi-footer .pi-f-cta{flex-direction:row!important;flex-wrap:nowrap!important;}\n.pi-footer .pi-f-card>.elementor-element,.pi-footer .pi-f-col>.elementor-element,.pi-footer .pi-f-brand>.elementor-element,.pi-footer .pi-f-contactcol>.elementor-element,.pi-footer .pi-f-btns>.elementor-element{width:100%!important;max-width:100%!important;flex:0 0 auto!important;}\n.pi-footer .pi-f-brand-head>.elementor-element,.pi-footer .pi-f-copy-end>.elementor-element{flex:0 0 auto!important;width:auto!important;margin:0!important;}\n\n/* --- گوشه بریده با قوس معکوس (دسکتاپ) --- */\n.pi-footer .pi-f-cta-wrap{position:relative;background:var(--pi-page);border-bottom-right-radius:var(--pi-r);}\n.pi-footer .pi-f-cta-wrap::before,.pi-footer .pi-f-cta-wrap::after{content:\"\";position:absolute;width:var(--pi-r);height:var(--pi-r);pointer-events:none;\n  background:radial-gradient(circle at 100% 100%,transparent calc(var(--pi-r) - .5px),var(--pi-page) var(--pi-r));}\n.pi-footer .pi-f-cta-wrap::before{top:0;right:calc(var(--pi-r) * -1);}\n.pi-footer .pi-f-cta-wrap::after{top:100%;left:0;}\n.pi-footer .pi-f-cta{height:100%;position:relative;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease;}\n.pi-footer .pi-f-cta:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(43,50,60,.12);}\n.pi-footer .pi-f-cta-text{flex:1 1 auto!important;min-width:0;}\n.pi-footer .pi-f-cta-art{flex:0 0 auto!important;width:auto!important;position:relative;}\n.pi-footer .pi-f-cta-art .elementor-icon{position:relative;z-index:1;box-shadow:0 14px 30px rgba(177,26,59,.35);}\n.pi-footer .pi-f-cta-art::before,.pi-footer .pi-f-cta-art::after{content:\"\";position:absolute;inset:-14px;border-radius:50%;border:1.5px dashed rgba(177,26,59,.25);animation:piSpin 22s linear infinite;}\n.pi-footer .pi-f-cta-art::after{inset:-30px;border-style:solid;border-color:rgba(177,26,59,.08);animation:none;}\n@keyframes piSpin{to{transform:rotate(360deg)}}\n\n/* --- ستون‌های لینک --- */\n.pi-footer .pi-f-title .elementor-heading-title::after{content:\"\";display:block;width:26px;height:2px;margin-top:10px;border-radius:2px;background:var(--pi-red);transition:width .3s ease;}\n.pi-footer .pi-f-col:hover .pi-f-title .elementor-heading-title::after{width:44px;}\n.pi-footer .pi-f-list .elementor-icon-list-item a,.pi-footer .pi-f-list .elementor-icon-list-item>span{transition:transform .25s ease,color .25s ease;}\n.pi-footer .pi-f-list .elementor-icon-list-item:hover a{transform:translateX(-5px);}\n.pi-footer .pi-f-contact .elementor-icon-list-icon{width:34px;height:34px;flex:0 0 34px;display:inline-flex!important;align-items:center;justify-content:center;border-radius:10px;background:rgba(255,255,255,.06);}\n\n/* --- بخش پایین با الگوی شش‌ضلعی --- */\n.pi-footer .pi-f-bottom{background-image:var(--pi-hex);background-size:56px 98px;border-top:1px solid var(--pi-line);}\n.pi-footer .pi-f-brand-head .pi-f-logo img{background:#fff;border-radius:16px;padding:6px;}\n.pi-footer .pi-f-badge p{display:inline-flex;align-items:center;gap:8px;margin:0;padding:8px 14px;border-radius:40px;background:rgba(255,255,255,.07);border:1px solid var(--pi-line);}\n.pi-footer .pi-f-badge-ic{display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;border-radius:50%;background:var(--pi-red);font-size:11px;}\n.pi-footer .pi-f-actions{align-items:stretch!important;}\n.pi-footer .pi-f-btns{flex:1 1 auto!important;min-width:0;}\n.pi-footer .pi-f-abtn .elementor-button{width:100%;justify-content:flex-start;transition:background-color .25s ease,transform .25s ease;}\n.pi-footer .pi-f-abtn .elementor-button-icon{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:9px;background:rgba(255,255,255,.08);}\n.pi-footer .pi-f-abtn .elementor-button:hover{transform:translateX(-4px);}\n.pi-footer .pi-f-tile{flex:0 0 118px!important;width:118px!important;transition:transform .3s ease,box-shadow .3s ease;}\n.pi-footer .pi-f-tile:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(177,26,59,.35);}\n.pi-footer .pi-f-tile .elementor-icon-box-title a::after{content:\"\";position:absolute;inset:0;}\n.pi-footer .pi-f-tile .elementor-icon{animation:piRing 2.8s ease-in-out infinite;}\n@keyframes piRing{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(-14deg)}88%{transform:rotate(12deg)}92%{transform:rotate(-8deg)}96%{transform:rotate(5deg)}}\n.pi-footer .pi-f-tile .elementor-icon-box-description{direction:ltr;white-space:nowrap;font-size:11.5px!important;}\n\n/* --- نوار کپی‌رایت --- */\n.pi-footer .pi-f-copy{position:relative;}\n.pi-footer .pi-f-copy::before{content:\"\";position:absolute;inset:0;background-image:var(--pi-hex);background-size:56px 98px;opacity:.9;pointer-events:none;}\n.pi-footer .pi-f-copy>*{position:relative;}\n.pi-footer .pi-f-copy p{margin:0;}\n.pi-totop{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:0;border-radius:50%;background:#fff;color:var(--pi-red,#B11A3B);cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.18);transition:transform .25s ease;}\n.pi-totop:hover{transform:translateY(-3px);}\n\n/* ================= ریسپانسیو ================= */\n@media (max-width:1024px){\n  .pi-footer{--pi-r:22px;}\n  .pi-footer .pi-f-top{flex-direction:column!important;}\n  .pi-footer .pi-f-cta-wrap{order:-1;width:100%!important;background:transparent;border-radius:0;padding:16px 16px 0!important;}\n  .pi-footer .pi-f-cta-wrap::before,.pi-footer .pi-f-cta-wrap::after{display:none;}\n  .pi-footer .pi-f-links,.pi-footer .pi-f-cta{width:100%!important;}\n  .pi-footer .pi-f-cta-text{width:auto!important;}\n  .pi-footer .pi-f-bottom{flex-wrap:wrap!important;}\n  .pi-footer .pi-f-brand{width:100%!important;}\n  .pi-footer .pi-f-contactcol,.pi-footer .pi-f-actions{width:calc(50% - 20px)!important;}\n  .pi-footer .pi-f-actions{flex-direction:column!important;}\n  .pi-footer .pi-f-tile{flex:0 0 auto!important;width:100%!important;padding:14px 18px!important;}\n  .pi-footer .pi-f-tile .elementor-icon-box-wrapper{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:14px;text-align:right;}\n  .pi-footer .pi-f-tile .elementor-icon-box-icon{margin:0!important;}\n  .pi-footer .pi-f-tile .elementor-icon-box-description{font-size:14px!important;}\n}\n@media (max-width:767px){\n  .pi-footer{--pi-r:20px;}\n  .pi-footer .pi-f-cta-wrap{padding:12px 12px 0!important;}\n  .pi-footer .pi-f-links{flex-direction:column!important;gap:0!important;}\n  .pi-footer .pi-f-col{width:100%!important;border-bottom:1px solid var(--pi-line);}\n  .pi-footer .pi-f-col:last-child{border-bottom:0;}\n  .pi-footer .pi-f-bottom{flex-direction:column!important;gap:28px!important;}\n  .pi-footer .pi-f-contactcol,.pi-footer .pi-f-actions{width:100%!important;}\n  .pi-footer .pi-f-copy{flex-direction:column-reverse!important;text-align:center;}\n  .pi-footer .pi-f-copy-end{justify-content:center!important;}\n  /* آکاردئون ستون‌های لینک (فقط وقتی اسکریپت فعال است) */\n  .pi-footer.pi-js .pi-f-col .pi-f-title{margin:0!important;cursor:pointer;}\n  .pi-footer.pi-js .pi-f-col .pi-f-title .elementor-heading-title{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}\n  .pi-footer.pi-js .pi-f-col .pi-f-title .elementor-heading-title::after{width:9px!important;height:9px;margin:0 0 4px 4px;background:none;border:solid #fff;border-width:0 0 2px 2px;border-radius:0;transform:rotate(-45deg);transition:transform .3s ease;}\n  .pi-footer.pi-js .pi-f-col.is-open .pi-f-title .elementor-heading-title::after{transform:rotate(135deg);margin-bottom:-4px;}\n  .pi-footer.pi-js .pi-f-col .pi-f-list{display:grid!important;grid-template-rows:0fr;transition:grid-template-rows .35s ease;}\n  .pi-footer.pi-js .pi-f-col .pi-f-list>.elementor-widget-container{min-height:0;overflow:hidden;}\n  .pi-footer.pi-js .pi-f-col.is-open .pi-f-list{grid-template-rows:1fr;}\n  .pi-footer.pi-js .pi-f-col.is-open .pi-f-list>.elementor-widget-container{padding-bottom:18px;}\n}\n@media (prefers-reduced-motion:reduce){.pi-footer *,.pi-footer *::before,.pi-footer *::after{animation:none!important;transition:none!important;}}\n.elementor-editor-active .pi-footer .pi-f-code{position:relative!important;width:auto!important;height:auto!important;}\n</style>\n\n<script>\n(function(){\n  function ready(fn){ document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }\n  function key(t){ return (t || '').replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[‌\\s]+/g,'').trim(); }\n  ready(function(){\n    var f = document.querySelector('.pi-footer'); if (!f) return;\n    if (document.body.classList.contains('elementor-editor-active')) return;\n    f.classList.add('pi-js');\n\n    /* لینک‌ها خودکار از منوی هدر (فهرست وردپرس) خوانده می‌شوند؛ کافی است متن آیتم‌ها یکی باشد */\n    var map = {};\n    document.querySelectorAll('.pi-header .pi-nav a[href], .pi-mnav a[href], .elementor-nav-menu a[href]').forEach(function(a){\n      var c = a.cloneNode(true); c.querySelectorAll('.pi-badge,.sub-arrow,i,svg').forEach(function(x){ x.remove(); }); var h = a.getAttribute('href'), k = key(c.textContent);\n      if (h && h.charAt(0) !== '#' && k && !map[k]) map[k] = h;\n    });\n    f.querySelectorAll('.pi-f-list a').forEach(function(a){ var t = a.querySelector('.elementor-icon-list-text') || a; var h = map[key(t.textContent)]; if (h) a.setAttribute('href', h); });\n    f.querySelectorAll('[data-pi-sync]').forEach(function(a){ var h = map[key(a.getAttribute('data-pi-sync'))]; if (h) a.setAttribute('href', h); });\n\n    /* سال شمسی خودکار */\n    try { var y = new Intl.DateTimeFormat('fa-IR-u-ca-persian', {year:'numeric'}).format(new Date()).replace(/[^۰-۹0-9]/g, '');\n      if (y) f.querySelectorAll('.pi-year').forEach(function(s){ s.textContent = y; }); } catch (e) {}\n\n    /* بازگشت به بالا */\n    f.querySelectorAll('.pi-totop').forEach(function(b){ b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); }); });\n\n    /* آکاردئون ستون‌ها در موبایل */\n    var mq = window.matchMedia('(max-width:767px)');\n    f.querySelectorAll('.pi-f-col').forEach(function(c, i){\n      var t = c.querySelector('.pi-f-title'), l = c.querySelector('.pi-f-list'); if (!t || !l) return;\n      var id = 'pi-f-list-' + i; l.id = id;\n      t.setAttribute('role', 'button'); t.setAttribute('aria-controls', id);\n      function sync(){ var open = !mq.matches || c.classList.contains('is-open');\n        t.setAttribute('aria-expanded', open ? 'true' : 'false'); t.tabIndex = mq.matches ? 0 : -1;\n        l.toggleAttribute('inert', !open); }\n      function toggle(){ if (!mq.matches) return; c.classList.toggle('is-open'); sync(); }\n      t.addEventListener('click', toggle);\n      t.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });\n      (mq.addEventListener ? mq.addEventListener('change', sync) : mq.addListener(sync)); sync();\n    });\n  });\n})();\n</script>\n"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "فوتر بازرگانی پردیس",
+  "type": "section"
+}
