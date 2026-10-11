@@ -16,6 +16,19 @@
 .pi-header .pi-logo img{transition:max-width .35s ease;}
 .pi-header.elementor-sticky--effects .pi-logo img{max-width:64px!important;}
 
+
+/* --- چیدمان ثابت ردیف‌ها (جلوگیری از شکستن خط در موبایل) --- */
+.pi-header .pi-main,.pi-header .pi-main>.e-con-inner,.pi-header .pi-topbar,.pi-header .pi-topbar>.e-con-inner{flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;justify-content:space-between!important;}
+.pi-header .pi-brand,.pi-header .pi-actions,.pi-header .pi-tb-right,.pi-header .pi-tb-left{flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;margin:0!important;}
+.pi-header .pi-actions,.pi-header .pi-tb-left{justify-content:flex-end!important;}
+.pi-header .pi-actions>.elementor-element,.pi-header .pi-brand>.elementor-element,.pi-header .pi-tb-left>.elementor-element,.pi-header .pi-tb-right>.elementor-element{flex:0 0 auto!important;width:auto!important;margin:0!important;}
+@media (max-width:1024px){
+  .pi-header .pi-brand{flex:0 0 auto!important;width:auto!important;}
+  .pi-header .pi-actions{flex:1 1 auto!important;width:auto!important;min-width:0;}
+  .pi-header .pi-tb-right{flex:1 1 auto!important;width:auto!important;min-width:0;}
+  .pi-header .pi-tb-left{flex:0 0 auto!important;width:auto!important;}
+}
+
 /* --- منو دقیقاً در وسط هدر --- */
 @media (min-width:1025px){
   .pi-header .pi-main>.e-con-inner>.pi-brand,.pi-header .pi-main>.e-con-inner>.pi-actions,
@@ -104,30 +117,57 @@
 @keyframes piShine{0%,60%{right:-75%}100%{right:130%}}
 
 /* --- منوی موبایل کشویی (Off-canvas) --- */
-.pi-header .pi-offcanvas{position:fixed!important;top:0;right:0;bottom:0;width:min(88vw,380px)!important;max-width:none!important;height:100vh;height:100dvh;
-  overflow-y:auto;overscroll-behavior:contain;z-index:1001;box-shadow:-20px 0 60px rgba(43,50,60,.2);
-  transform:translateX(105%);visibility:hidden;transition:transform .4s cubic-bezier(.4,0,.2,1),visibility .4s;}
-.pi-header .pi-offcanvas.is-open{transform:none;visibility:visible;}
-.pi-header .pi-offcanvas>.pi-oc-nav{flex:1 0 auto;}
-.pi-overlay{position:fixed;inset:0;z-index:1000;background:rgba(43,50,60,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s;}
+/* تا زمان باز شدن display:none است تا هرگز باعث اسکرول افقی صفحه نشود */
+.pi-offcanvas{display:none!important;position:fixed!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;
+  width:min(88vw,400px)!important;max-width:100vw!important;height:auto!important;min-height:0!important;margin:0!important;
+  flex-direction:column!important;flex-wrap:nowrap!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  z-index:100001!important;background:#fff;box-shadow:-20px 0 60px rgba(43,50,60,.2);
+  transform:translateX(100%);transition:transform .38s cubic-bezier(.4,0,.2,1);}
+.pi-offcanvas.is-visible{display:flex!important;}
+.pi-offcanvas.is-open{transform:none;}
+.pi-offcanvas *{box-sizing:border-box;}
+.pi-offcanvas>.e-con,.pi-offcanvas>.elementor-element{width:100%!important;max-width:100%!important;flex:0 0 auto!important;margin:0!important;}
+.pi-offcanvas>.pi-oc-nav{flex:1 0 auto!important;}
+.pi-overlay{position:fixed;inset:0;z-index:100000;background:rgba(43,50,60,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s;}
 .pi-overlay.is-open{opacity:1;visibility:visible;}
 html.pi-lock,html.pi-lock body{overflow:hidden!important;}
+/* سربرگ پنل: لوگو و دکمه بستن در یک ردیف */
+.pi-offcanvas .pi-oc-head{flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;justify-content:space-between!important;position:sticky!important;top:0;z-index:2;background:#fff;}
+.pi-offcanvas .pi-oc-head>.elementor-element{flex:0 0 auto!important;width:auto!important;margin:0!important;}
+.pi-offcanvas .pi-oc-logo img{max-width:52px!important;height:auto;}
+.pi-offcanvas .pi-close .elementor-icon{display:flex!important;align-items:center;justify-content:center;width:40px;height:40px;padding:0!important;}
+/* جستجو و منو تمام‌عرض */
+.pi-offcanvas .pi-oc-search>.elementor-element,.pi-offcanvas .pi-oc-nav>.elementor-element{width:100%!important;max-width:100%!important;}
 .pi-offcanvas .pi-mnav .elementor-menu-toggle{display:none!important;}
-.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown{display:block!important;transform:none!important;max-height:none!important;overflow:visible!important;box-shadow:none!important;position:static!important;width:auto!important;}
-.pi-offcanvas .pi-mnav .elementor-nav-menu{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;}
-.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a{display:flex;align-items:center;border-radius:10px;justify-content:flex-start;transition:background-color .2s,color .2s;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu__container{display:block!important;position:static!important;transform:none!important;max-height:none!important;overflow:visible!important;
+  box-shadow:none!important;width:auto!important;margin:0!important;background:transparent!important;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;width:100%!important;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu li{width:100%;}
+.pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a{display:flex!important;align-items:center;justify-content:flex-start;width:100%;min-height:48px;border-radius:10px;white-space:normal;transition:background-color .2s,color .2s;}
 .pi-offcanvas .pi-mnav .elementor-nav-menu--dropdown a.elementor-item-active{font-weight:700;box-shadow:inset -3px 0 0 var(--pi-red);}
-.pi-offcanvas .pi-mnav .sub-menu{margin:2px 14px 6px 0!important;border-right:1px solid var(--pi-line)!important;}
-.pi-offcanvas .pi-mnav .sub-menu a{font-size:14px!important;color:var(--pi-muted)!important;}
-.pi-offcanvas .pi-mnav .sub-arrow{margin-right:auto;transition:transform .25s ease;}
+.pi-offcanvas .pi-mnav .sub-menu{position:static!important;width:auto!important;min-width:0!important;max-width:none!important;left:auto!important;right:auto!important;top:auto!important;
+  margin:2px 14px 6px 0!important;padding:0!important;border:0!important;border-right:1px solid var(--pi-line)!important;box-shadow:none!important;background:transparent!important;}
+.pi-offcanvas .pi-mnav .sub-menu a{min-height:42px;font-size:14px!important;color:var(--pi-muted)!important;border:0!important;}
+.pi-offcanvas .pi-mnav .sub-menu a:hover{color:var(--pi-red)!important;}
+.pi-offcanvas .pi-mnav .sub-arrow{margin-right:auto!important;padding:0 10px!important;transition:transform .25s ease;}
 .pi-offcanvas .pi-mnav a.highlighted .sub-arrow{transform:rotate(180deg);}
-.pi-offcanvas .pi-oc-btns>.elementor-widget{flex:1 1 0;}
+/* دکمه‌های پایین */
+.pi-offcanvas .pi-oc-btns{flex-direction:row!important;flex-wrap:nowrap!important;}
+.pi-offcanvas .pi-oc-btns>.elementor-element{flex:1 1 0!important;width:auto!important;min-width:0!important;margin:0!important;}
+.pi-offcanvas .pi-oc-foot>.elementor-element{width:100%!important;max-width:100%!important;}
+.pi-offcanvas .elementor-button{width:100%;justify-content:center;}
+.pi-offcanvas .elementor-social-icons-wrapper{justify-content:center;}
 .pi-offcanvas.is-open .pi-oc-nav li{animation:piSlideIn .4s ease both;}
 .pi-offcanvas.is-open .pi-oc-nav li:nth-child(2){animation-delay:.04s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(3){animation-delay:.08s}
 .pi-offcanvas.is-open .pi-oc-nav li:nth-child(4){animation-delay:.12s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(5){animation-delay:.16s}
 .pi-offcanvas.is-open .pi-oc-nav li:nth-child(6){animation-delay:.2s}.pi-offcanvas.is-open .pi-oc-nav li:nth-child(n+7){animation-delay:.24s}
+.pi-offcanvas.is-open .pi-oc-nav .sub-menu li{animation:none;}
 @keyframes piSlideIn{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
-@media (min-width:1025px){.pi-header .pi-offcanvas{display:none!important;}}
+/* موبایل: تمام‌صفحه */
+@media (max-width:767px){
+  .pi-offcanvas{width:100vw!important;width:100dvw!important;left:0!important;box-shadow:none;}
+}
+@media (min-width:1025px){.pi-offcanvas,.pi-overlay{display:none!important;}}
 
 
 /* ================= ریسپانسیو ================= */
@@ -144,7 +184,6 @@ html.pi-lock,html.pi-lock body{overflow:hidden!important;}
   .pi-header .pi-main::after{height:2px;}
   .pi-header .pi-actions{gap:10px!important;}
   .pi-header.elementor-sticky--effects .pi-logo img{max-width:58px!important;}
-  .pi-header .pi-offcanvas{width:min(88vw,400px)!important;}
 }
 /* موبایل (تا ۷۶۷) */
 @media (max-width:767px){
@@ -167,9 +206,7 @@ html.pi-lock,html.pi-lock body{overflow:hidden!important;}
   .pi-header .pi-search:not(.pi-search--inline) .pi-search-pop{left:12px;right:12px;width:auto;max-width:none;top:calc(100% + 6px);}
   .pi-search-form input[type=search]{font-size:16px;} /* جلوگیری از زوم خودکار iOS */
   .pi-search-results{max-height:60vh;}
-  /* منوی کشویی */
-  .pi-header .pi-offcanvas{width:min(90vw,360px)!important;}
-  .pi-offcanvas .pi-oc-head{padding:14px 16px!important;}
+  .pi-offcanvas .pi-oc-head{padding:12px 16px!important;}
   .pi-offcanvas .pi-oc-foot{padding-bottom:calc(20px + env(safe-area-inset-bottom))!important;}
 }
 @media (max-width:360px){
@@ -179,10 +216,10 @@ html.pi-lock,html.pi-lock body{overflow:hidden!important;}
 
 /* --- نمایش در ویرایشگر المنتور: مگامنو و منوی موبایل باز می‌مانند تا قابل ویرایش باشند --- */
 .elementor-editor-active .pi-header .pi-mega{position:relative!important;top:auto;left:auto;opacity:1;visibility:visible;pointer-events:auto;transform:none;margin:20px auto!important;}
-.elementor-editor-active .pi-header .pi-offcanvas{position:relative!important;display:flex!important;transform:none;visibility:visible;height:auto;margin:20px auto;outline:2px dashed #C9CED6;}
-.elementor-editor-active .pi-header .pi-mega::before,.elementor-editor-active .pi-header .pi-offcanvas::before{position:absolute;top:-22px;right:0;font-size:11px;color:#7A8491;}
+.elementor-editor-active .pi-offcanvas{position:relative!important;display:flex!important;transform:none;height:auto!important;width:380px!important;margin:30px auto!important;outline:2px dashed #C9CED6;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;z-index:1!important;}
+.elementor-editor-active .pi-header .pi-mega::before,.elementor-editor-active .pi-offcanvas::before{position:absolute;top:-22px;right:0;font-size:11px;color:#7A8491;}
 .elementor-editor-active .pi-header .pi-mega::before{content:"مگامنو خدمات – در سایت با هاور روی «خدمات» باز می‌شود";}
-.elementor-editor-active .pi-header .pi-offcanvas::before{content:"منوی موبایل – در سایت با دکمه همبرگری باز می‌شود";}
+.elementor-editor-active .pi-offcanvas::before{content:"منوی موبایل – در سایت با دکمه همبرگری باز می‌شود";}
 .elementor-editor-active .pi-header .pi-code{position:relative!important;width:auto!important;height:auto!important;}
 
 @media (prefers-reduced-motion:reduce){.pi-header *,.pi-header *::before,.pi-header *::after{animation:none!important;transition:none!important;}}
@@ -315,19 +352,52 @@ html.pi-lock,html.pi-lock body{overflow:hidden!important;}
     /* --- منوی موبایل کشویی --- */
     var oc = header.querySelector('.pi-offcanvas');
     if (oc) {
-      var ov = document.createElement('div'); ov.className = 'pi-overlay'; header.appendChild(ov);
+      var ov = document.createElement('div'); ov.className = 'pi-overlay';
+      var portal = null, hideT, lastFocus;
       oc.setAttribute('role', 'dialog'); oc.setAttribute('aria-modal', 'true'); oc.setAttribute('aria-label', 'منوی سایت'); oc.id = oc.id || 'pi-menu';
+      /* منوی کشویی المنتور به‌صورت پیش‌فرض برای کیبورد و صفحه‌خوان مخفی است؛ آن را فعال می‌کنیم */
+      oc.querySelectorAll('.pi-mnav [aria-hidden]').forEach(function(n){ n.removeAttribute('aria-hidden'); });
+      oc.querySelectorAll('.pi-mnav a[tabindex="-1"]').forEach(function(n){ n.removeAttribute('tabindex'); });
+      /* انتقال پنل به body در اولین باز شدن: از هر transform/overflow والد در امان می‌ماند.
+         کلاس‌های سند المنتور (elementor-XXXX) روی wrapper کپی می‌شوند تا استایل ویجت‌ها حفظ شود */
+      function mount(){
+        if (portal) return;
+        var docEl = header.closest('.elementor'), cls = ['pi-portal'];
+        if (docEl) docEl.className.split(/\s+/).forEach(function(c){ if (/^elementor(-\d+)?$/.test(c)) cls.push(c); });
+        else cls.push('elementor');
+        portal = document.createElement('div'); portal.className = cls.join(' ');
+        portal.setAttribute('dir', getComputedStyle(header).direction || 'rtl');
+        portal.appendChild(ov); portal.appendChild(oc); document.body.appendChild(portal);
+      }
       var burgers = header.querySelectorAll('.pi-burger a, .pi-burger .elementor-icon');
-      var openOC = function(e){ if (e) e.preventDefault(); oc.classList.add('is-open'); ov.classList.add('is-open'); document.documentElement.classList.add('pi-lock');
-        burgers.forEach(function(b){ b.setAttribute('aria-expanded','true'); }); var c = oc.querySelector('.pi-close a'); if (c) c.focus(); };
-      var closeOC = function(e){ if (e) e.preventDefault(); if (!oc.classList.contains('is-open')) return; oc.classList.remove('is-open'); ov.classList.remove('is-open'); document.documentElement.classList.remove('pi-lock');
-        burgers.forEach(function(b){ b.setAttribute('aria-expanded','false'); }); };
-      burgers.forEach(function(b){ b.setAttribute('aria-controls', oc.id); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-label','باز کردن منو'); b.addEventListener('click', openOC); });
-      oc.querySelectorAll('.pi-close a, .pi-close .elementor-icon').forEach(function(b){ b.setAttribute('aria-label','بستن منو'); b.addEventListener('click', closeOC); });
+      function setExpanded(v){ burgers.forEach(function(b){ b.setAttribute('aria-expanded', v ? 'true' : 'false'); }); }
+      function openOC(e){
+        if (e) e.preventDefault();
+        mount(); clearTimeout(hideT); lastFocus = document.activeElement;
+        oc.classList.add('is-visible'); ov.classList.add('is-open');
+        void oc.offsetWidth; /* reflow تا انیمیشن ورود اجرا شود */
+        oc.classList.add('is-open'); oc.scrollTop = 0;
+        document.documentElement.classList.add('pi-lock'); setExpanded(true);
+        var c = oc.querySelector('.pi-close a, .pi-close .elementor-icon'); if (c) setTimeout(function(){ c.focus({preventScroll:true}); }, 50);
+      }
+      function closeOC(e){
+        if (e) e.preventDefault();
+        if (!oc.classList.contains('is-open')) return;
+        oc.classList.remove('is-open'); ov.classList.remove('is-open');
+        document.documentElement.classList.remove('pi-lock'); setExpanded(false);
+        hideT = setTimeout(function(){ oc.classList.remove('is-visible'); }, 400);
+        if (lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
+      }
+      burgers.forEach(function(b){ b.setAttribute('aria-controls', oc.id); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-label','باز کردن منو'); b.setAttribute('role','button'); b.addEventListener('click', openOC); });
+      oc.querySelectorAll('.pi-close a, .pi-close .elementor-icon').forEach(function(b){ b.setAttribute('aria-label','بستن منو'); b.setAttribute('role','button'); b.addEventListener('click', closeOC); });
       ov.addEventListener('click', closeOC);
       document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeOC(); });
-      oc.querySelectorAll('.pi-mnav a[href]').forEach(function(l){
-        l.addEventListener('click', function(){ var h = l.getAttribute('href'); if (h && h.charAt(0) !== '#' && !l.parentElement.classList.contains('menu-item-has-children')) closeOC(); });
+      oc.addEventListener('click', function(e){
+        var l = e.target.closest('a[href]'); if (!l || l.closest('.pi-close')) return;
+        if (e.target.closest('.sub-arrow')) return;
+        if (e.defaultPrevented) return; /* لمس اول روی آیتم دارای زیرمنو فقط زیرمنو را باز می‌کند */
+        var h = l.getAttribute('href');
+        if (h && h.charAt(0) !== '#') closeOC();
       });
       window.addEventListener('resize', function(){ if (window.innerWidth > 1024) closeOC(); });
     }
