@@ -116,6 +116,36 @@
 @keyframes piPulse{0%{box-shadow:0 0 0 0 rgba(177,26,59,.4)}70%{box-shadow:0 0 0 12px rgba(177,26,59,0)}100%{box-shadow:0 0 0 0 rgba(177,26,59,0)}}
 @keyframes piShine{0%,60%{right:-75%}100%{right:130%}}
 
+
+/* --- منوی آکاردئونی موبایل (ساخته‌شده از فهرست وردپرس) --- */
+.pi-offcanvas .pi-mnav.pi-built .elementor-nav-menu__container,.pi-offcanvas .pi-mnav.pi-built .elementor-menu-toggle{display:none!important;}
+.pi-acc{width:100%;}
+.pi-acc ul{list-style:none;margin:0;padding:0;}
+.pi-acc-list>.pi-acc-item{border-bottom:1px solid var(--pi-line);}
+.pi-acc-list>.pi-acc-item:last-child{border-bottom:0;}
+.pi-acc-row,.pi-acc-link{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:52px;padding:12px 8px!important;margin:0;
+  border:0!important;border-radius:12px!important;background:transparent!important;box-shadow:none!important;color:var(--pi-slate)!important;
+  font:inherit;font-size:15.5px!important;font-weight:500!important;line-height:1.5!important;text-align:right;text-decoration:none!important;text-transform:none!important;letter-spacing:0!important;
+  cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color .2s ease,color .2s ease;}
+.pi-acc-row:hover,.pi-acc-link:hover,.pi-acc-row:focus-visible,.pi-acc-link:focus-visible{background:var(--pi-tint)!important;color:var(--pi-red)!important;outline:none;}
+.pi-acc-text{display:inline-flex;align-items:center;gap:6px;}
+.pi-acc-chev{flex:0 0 32px;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#F5F6F8;color:var(--pi-slate);transition:transform .3s ease,background-color .2s,color .2s;}
+.pi-acc-item.is-open>.pi-acc-row{color:var(--pi-red)!important;font-weight:700!important;}
+.pi-acc-item.is-open>.pi-acc-row .pi-acc-chev{transform:rotate(180deg);background:var(--pi-red);color:#fff;}
+.pi-acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease;}
+.pi-acc-panel>.pi-acc-sub{min-height:0;overflow:hidden;}
+.pi-acc-item.is-open>.pi-acc-panel{grid-template-rows:1fr;}
+.pi-acc-item:not(.is-open)>.pi-acc-panel .pi-acc-link,.pi-acc-item:not(.is-open)>.pi-acc-panel .pi-acc-row{visibility:hidden;}
+.pi-acc-sub{margin:0 12px 0 0!important;padding:0 10px 0 0!important;border-right:2px solid var(--pi-line);}
+.pi-acc-sub>li:last-child{margin-bottom:8px;}
+.pi-acc-sub .pi-acc-link,.pi-acc-sub .pi-acc-row{min-height:44px;font-size:14.5px!important;color:#5B6572!important;}
+.pi-acc-sub .pi-acc-all>.pi-acc-link{color:var(--pi-red)!important;font-weight:700!important;}
+.pi-acc-item.is-current>.pi-acc-link{color:var(--pi-red)!important;font-weight:700!important;box-shadow:inset -3px 0 0 var(--pi-red)!important;}
+.pi-offcanvas.is-open .pi-acc-list>.pi-acc-item{animation:piSlideIn .4s ease both;}
+.pi-offcanvas.is-open .pi-acc-list>.pi-acc-item:nth-child(2){animation-delay:.04s}.pi-offcanvas.is-open .pi-acc-list>.pi-acc-item:nth-child(3){animation-delay:.08s}
+.pi-offcanvas.is-open .pi-acc-list>.pi-acc-item:nth-child(4){animation-delay:.12s}.pi-offcanvas.is-open .pi-acc-list>.pi-acc-item:nth-child(5){animation-delay:.16s}
+.pi-offcanvas.is-open .pi-acc-list>.pi-acc-item:nth-child(n+6){animation-delay:.2s}
+
 /* --- منوی موبایل کشویی (Off-canvas) --- */
 /* تا زمان باز شدن display:none است تا هرگز باعث اسکرول افقی صفحه نشود */
 .pi-offcanvas{display:none!important;position:fixed!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;
@@ -348,6 +378,54 @@ html.pi-lock,html.pi-lock body{overflow:hidden!important;}
         document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeS(); });
       }
     });
+
+    /* --- ساخت منوی آکاردئونی موبایل از روی فهرست وردپرس ---
+       منو از همان فهرستی که المنتور در صفحه چاپ کرده خوانده می‌شود (اول ویجت منوی موبایل، اگر خالی بود منوی دسکتاپ)
+       و با کد خودمان باز و بسته می‌شود؛ پس به اسکریپت منوی المنتور وابسته نیست. */
+    (function(){
+      var host = header.querySelector('.pi-offcanvas .pi-mnav'); if (!host) return;
+      function topList(root){ if (!root) return null; var ul = root.querySelector('ul.elementor-nav-menu') || root.querySelector('ul.menu') || root.querySelector('ul');
+        return ul && ul.querySelector(':scope > li') ? ul : null; }
+      var src = topList(host) || topList(header.querySelector('.pi-nav .elementor-nav-menu--main')) || topList(header.querySelector('.pi-nav'));
+      if (!src) return;
+      var CHEV = '<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      var n = 0;
+      function label(a){ return text(a); }
+      function esc(t){ var d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+      function isCurrent(li, a){ return /(^|\s)current(-menu|_page)-(item|ancestor|parent)(\s|$)/.test(li.className) || (a && a.classList.contains('elementor-item-active')); }
+      function build(ul, depth){
+        var out = '';
+        ul.querySelectorAll(':scope > li').forEach(function(li){
+          var a = li.querySelector(':scope > a'); if (!a) return;
+          var t = label(a), h = a.getAttribute('href') || '', sub = li.querySelector(':scope > ul');
+          var cur = isCurrent(li, a), badge = BADGES[t] ? '<span class="pi-badge">' + esc(BADGES[t]) + '</span>' : '';
+          var tgt = a.getAttribute('target') ? ' target="' + esc(a.getAttribute('target')) + '" rel="noopener"' : '';
+          if (sub && sub.querySelector(':scope > li')) {
+            var id = 'pi-acc-' + (++n), real = h && h.charAt(0) !== '#';
+            out += '<li class="pi-acc-item has-children' + (cur ? ' is-current is-open' : '') + '">'
+                 + '<button type="button" class="pi-acc-row" aria-expanded="' + (cur ? 'true' : 'false') + '" aria-controls="' + id + '">'
+                 + '<span class="pi-acc-text">' + esc(t) + badge + '</span><span class="pi-acc-chev">' + CHEV + '</span></button>'
+                 + '<div class="pi-acc-panel" id="' + id + '"><ul class="pi-acc-sub">'
+                 + (real ? '<li class="pi-acc-item pi-acc-all"><a class="pi-acc-link" href="' + esc(h) + '"' + tgt + '>مشاهده همه ' + esc(t) + '</a></li>' : '')
+                 + build(sub, depth + 1) + '</ul></div></li>';
+          } else {
+            out += '<li class="pi-acc-item' + (cur ? ' is-current' : '') + '"><a class="pi-acc-link" href="' + esc(h || '#') + '"' + tgt + (cur ? ' aria-current="page"' : '') + '>' + esc(t) + badge + '</a></li>';
+          }
+        });
+        return out;
+      }
+      var html = build(src, 0); if (!html) return;
+      var nav = document.createElement('nav'); nav.className = 'pi-acc'; nav.setAttribute('aria-label', 'منوی موبایل');
+      nav.innerHTML = '<ul class="pi-acc-list">' + html + '</ul>';
+      (host.querySelector('.elementor-widget-container') || host).appendChild(nav);
+      host.classList.add('pi-built');
+      nav.addEventListener('click', function(e){
+        var row = e.target.closest('.pi-acc-row'); if (!row) return;
+        var item = row.parentElement, open = !item.classList.contains('is-open');
+        item.parentElement.querySelectorAll(':scope > .pi-acc-item.is-open').forEach(function(o){ if (o !== item) { o.classList.remove('is-open'); o.querySelector(':scope > .pi-acc-row').setAttribute('aria-expanded','false'); } });
+        item.classList.toggle('is-open', open); row.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
 
     /* --- منوی موبایل کشویی --- */
     var oc = header.querySelector('.pi-offcanvas');
